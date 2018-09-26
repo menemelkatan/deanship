@@ -1,0 +1,404 @@
+/*colors*/
+$black-blue: #23454c
+$yellow: #f6c103
+$light-blue: #5a8d9b
+$gray: #808080
+
+/*fonts*/
+@font-face
+  font-family: LT-Light
+  src: url('../fonts/FrutigerLTArabic-45Light.ttf')
+
+@font-face
+  font-family: LT-Roman
+  src: url('../fonts/FrutigerLTArabic-55Roman.ttf')
+
+@font-face
+  font-family: LT-Bold
+  src: url('../fonts/FrutigerLTArabic-65Bold.ttf')
+
+@font-face
+  font-family: LT-Black
+  src: url('../fonts/FrutigerLTArabic-75Black.ttf')
+
+
+/*public*/
+*
+  font-family: LT-Light
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+.dotted-btn
+  position: relative
+  padding: 0
+  text-decoration: none !important
+  color: $light-blue
+  display: block
+
+  &:before
+    position: absolute
+    content: ""
+    top: 25%
+    right: -5px
+    height: 18px
+    width: 18px
+    border-radius: 50%
+    background: $yellow
+    z-index: -1
+    opacity: 0.8
+    transition: 0.2s ease-in-out all
+
+  &:hover:before
+    width: calc(100% + 10px)
+    border-radius: 10px
+
+
+.deanship--content
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+
+/*landing-navbar*/
+.landing-navbar
+  background-color: transparent
+  position: fixed
+  width: 100%
+  z-index: 9999
+
+  .navbar-nav
+    .nav-item:not(.dropdown)
+      margin: 0 40px
+      position: relative
+      a
+        color: white
+        font-size: 12px
+        position: relative
+        z-index: 2
+        display: block
+
+        &:after
+          position: absolute
+          content: ""
+          top: 50%
+          left: 100%
+          height: 6px
+          width: 6px
+          border-radius: 50%
+          background: $yellow
+          transform: scale(0)
+          transition: 0.1s ease-in-out all
+
+        &:before
+          position: absolute
+          content: ""
+          top: 55%
+          left: 5%
+          height: 2px
+          width: 0
+          opacity: 0.8
+          background: $yellow
+          z-index: -1
+          transition: 0.1s ease-in-out all
+
+        &:hover:after
+          transform: scale(1)
+
+        &:hover:before
+          width: 85%
+
+    .nav-item.active:not(.dropdown)
+      a
+        &:after
+          transform: scale(1)
+
+        &:before
+          width: 85%
+
+
+    .nav-item.scroll-item:not(:first-of-type):after
+      position: absolute
+      content: ""
+      height: 2px
+      width: 2px
+      background: white
+      border-radius: 2px
+      top: 45%
+      left: 150%
+
+    .dropdown
+      a:after
+        opacity: 0
+
+      .dropdown-menu
+        background: $black-blue
+        padding: 0
+        a
+          color: white
+          font-size: 12px
+          padding: 5px 10px
+
+          &:hover
+            color: $black-blue
+
+        .dropdown-divider
+          margin: 0
+
+
+
+
+
+/*landing-footer*/
+.landing-footer
+  position: fixed
+  bottom: 0
+  left: 0
+  width: 100%
+  display: flex
+  justify-content: space-between
+  padding: 30px
+
+  a
+    color: white
+    font-size: 11px
+    padding: 5px
+
+    .deanship--icon
+      margin-left: 10px
+
+  .footer-contact-nav
+    .nav-item
+      margin: 0 5px
+
+  .copyright
+    color: white
+    font-size: 11px
+
+
+/*landing-sidebar*/
+.landing-sidebar
+  position: fixed
+  top: 150px
+  left: 50px
+  width: 100px
+  color: white
+  text-align: center
+
+  .slideshow-nav
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    text-align: center
+    margin-bottom: 150px
+
+    .current, .last
+      width: 100%
+
+    .v-devider
+      height: 100px
+      width: 2px
+      background: white
+      margin: 20px 0
+
+  .deanship--icon
+    margin: 0 auto
+
+
+/*main content*/
+.main
+  /*splash*/
+  .home-main
+    padding: 100px
+    background: #a5a5a5 url('../img/scroll/photo/bg1.jpg') center no-repeat
+    background-size: cover
+    h2
+      color: $yellow
+      font-family: LT-Bold
+      font-size: 8em
+      line-height: 1.4
+      margin-top: 100px
+
+  /*about us*/
+  .about-main
+    padding-right: 100px
+    img
+      height: 500px
+      width: 100%
+
+    .col-md-6
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+
+    .about-details
+      width: 350px
+
+      p
+        font-size: 13px
+        color: $gray
+        margin-top: 25px
+
+      h2
+        font-family: LT-Bold
+        font-size: 30px
+
+  /*our services*/
+  .our-services
+    padding-right: 150px
+    .single-service
+      text-align: right
+      position: relative
+      padding: 0
+      padding-top: 30px
+      img
+        width: 180px
+
+      .service-details
+        padding: 0 20px
+
+
+        p
+          font-size: 13px
+          color: $gray
+          width: 230px
+
+        h2
+          font-family: LT-Bold
+          font-size: 20px
+          margin: 15px auto
+
+        .dotted-btn
+          margin-top: 25px
+
+      &:after
+        position: absolute
+        content: ""
+        height: 520px
+        width: 2px
+        right: 0
+        background: #e5e5e5
+        top: -50px
+
+      &:before
+        position: absolute
+        content: ""
+        height: 15px
+        width: 15px
+        right: -6px
+        background: #e5e5e5
+        top: -50px
+        border-radius: 50%
+
+
+  /*events*/
+  .events-home
+    .event-slide
+      .event-slide-wrapper
+        display: flex
+        align-items: center
+        justify-content: center
+      .event-thumbnail
+        img
+          width: 350px
+
+      .event-description
+        padding-top: 100px
+        padding-right: 100px
+        h2
+          font-size: 30px
+          font-family: LT-Bold
+          color: $black-blue
+          position: relative
+
+          &:after
+            position: absolute
+            content: ""
+            top: 120%
+            right: 0
+            height: 2px
+            width: 50px
+            background: $yellow
+
+        p
+          font-size: 12px
+          color: $gray
+          margin: 25px 0
+
+
+    .dates-wrapper
+      display: flex
+      align-items: center
+      justify-content: center
+      position: absolute
+      top: 0
+      right: 150px
+      bottom: 0
+
+    .nav-pills
+      border-left: 1px solid #e5e5e5
+      margin: auto 20px
+      right: 150px
+      z-index: 9999
+
+      a
+        background: transparent
+        color: $black-blue
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        border-radius: 0
+        border-bottom: 1px solid #e5e5e5
+
+        .event-date
+          .day
+            font-family: LT-Bold
+            margin: 0
+            font-size: 50px
+
+          .month
+            font-size: 14px
+            letter-spacing: 2px
+            text-transform: uppercase
+
+      a:last-child
+        border-bottom: none
+
+      a.active
+        border-left: 3px solid $yellow
+
+
+  /*contact us*/
+  .contact-us
+    padding: 100px
+    background: #a5a5a5 url('../img/scroll/photo/bg2.jpg') center no-repeat
+    background-size: cover
+
+    .contact-details
+      h2
+        color: $gray
+        font-family: LT-Bold
+        width: 800px
+
+      h4
+        color: $gray
+        font-family: LT-Bold
+        margin: 25px 0
+        width: 600px
+
+        a
+          color: $yellow
+
+    .map-spot
+      position: absolute
+      text-align: center
+      color: $gray
+      bottom: 400px
+      left: 400px
+
+      img
+        margin-top: 10px
