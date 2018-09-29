@@ -3,6 +3,8 @@ $(document).ready(function() {
 		//options here
     menu: '#landing-menu',
     anchors:['splash', 'about-us', 'our-services', 'events', 'contact-us'],
+		scrollOverflow: true,
+		afterResponsive: function(isResponsive){},
     onLeave: function(origin, destination, direction){
   		//it won't scroll if the destination is the 3rd section
   		console.log(destination.index);

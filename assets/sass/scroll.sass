@@ -29,6 +29,12 @@ $gray: #808080
   margin: 0
   box-sizing: border-box
 
+.fp-section.fp-table, .fp-slide.fp-table
+  display: block
+
+.fp-tableCell
+  display: block
+
 .dotted-btn
   position: relative
   padding: 0
@@ -67,12 +73,25 @@ $gray: #808080
   background-color: transparent
   position: fixed
   width: 100%
+  padding: 30px 0px
   z-index: 9999
 
+  .navbar-brand
+    position: fixed
+    top: 20px
+    left: 20px
+    display: block !important
+
   .navbar-nav
+    @media(max-width: 992px)
+      background: $gray
+      margin-top: 50px
+
     .nav-item:not(.dropdown)
       margin: 0 40px
       position: relative
+      @media(max-width: 1100px)
+        margin: 0 20px
       a
         color: white
         font-size: 12px
@@ -129,7 +148,13 @@ $gray: #808080
       top: 45%
       left: 150%
 
+      @media(max-width: 1100px)
+        left: 130%
+
     .dropdown
+      @media(max-width: 992px)
+        margin: 0 15px
+        filter: invert(1)
       a:after
         opacity: 0
 
@@ -148,7 +173,9 @@ $gray: #808080
           margin: 0
 
 
-
+  .navbar-toggler
+    border: none
+    outline: none
 
 
 /*landing-footer*/
@@ -187,13 +214,17 @@ $gray: #808080
   color: white
   text-align: center
 
+  @media(max-width: 900px)
+    width: 50px
+    left: 0
+
   .slideshow-nav
     display: flex
     align-items: center
     justify-content: center
     flex-wrap: wrap
     text-align: center
-    margin-bottom: 150px
+    margin-bottom: 80px
 
     .current, .last
       width: 100%
@@ -212,21 +243,25 @@ $gray: #808080
 .main
   /*splash*/
   .home-main
-    padding: 100px
     background: #a5a5a5 url('../img/scroll/photo/bg1.jpg') center no-repeat
     background-size: cover
+    padding: 150px 100px
     h2
       color: $yellow
       font-family: LT-Bold
       font-size: 8em
       line-height: 1.4
-      margin-top: 100px
+
+      @media(max-width: 750px)
+        font-size: 6em
+
+      @media(max-width: 500px)
+        font-size: 3em
 
   /*about us*/
   .about-main
-    padding-right: 100px
+    padding: 150px 100px
     img
-      height: 500px
       width: 100%
 
     .col-md-6
@@ -245,15 +280,21 @@ $gray: #808080
       h2
         font-family: LT-Bold
         font-size: 30px
+        @media(max-width: 642px)
+          font-size: 18px
 
   /*our services*/
   .our-services
-    padding-right: 150px
+    padding: 150px 100px
+    @media(max-width: 930px)
+      padding: 120px 30px
     .single-service
       text-align: right
       position: relative
       padding: 0
       padding-top: 30px
+      @media(max-width: 575px)
+        text-align: center
       img
         width: 180px
 
@@ -265,6 +306,11 @@ $gray: #808080
           font-size: 13px
           color: $gray
           width: 230px
+          @media(max-width: 992px)
+            width: 180px
+
+          @media(max-width: 575px)
+            margin: 0 auto
 
         h2
           font-family: LT-Bold
@@ -274,6 +320,9 @@ $gray: #808080
         .dotted-btn
           margin-top: 25px
 
+          @media(max-width: 575px)
+            margin: 0 auto
+
       &:after
         position: absolute
         content: ""
@@ -282,6 +331,9 @@ $gray: #808080
         right: 0
         background: #e5e5e5
         top: -50px
+
+        @media(max-width: 992px)
+          display: none
 
       &:before
         position: absolute
@@ -293,21 +345,35 @@ $gray: #808080
         top: -50px
         border-radius: 50%
 
+        @media(max-width: 992px)
+          display: none
+
 
   /*events*/
   .events-home
+    padding: 120px 100px
+    @media(max-width: 930px)
+      padding: 120px 30px
     .event-slide
       .event-slide-wrapper
-        display: flex
-        align-items: center
-        justify-content: center
+        margin: 0 auto
       .event-thumbnail
+        text-align: left
+
+        @media(max-width: 768px)
+          text-align: center
+
         img
           width: 350px
 
+
+
       .event-description
-        padding-top: 100px
-        padding-right: 100px
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        @media(max-width: 768px)
+          text-align: center
         h2
           font-size: 30px
           font-family: LT-Bold
@@ -323,20 +389,31 @@ $gray: #808080
             width: 50px
             background: $yellow
 
+            @media(max-width: 768px)
+              right: 45%
+
         p
           font-size: 12px
           color: $gray
           margin: 25px 0
+
+        .dotted-btn
+          @media(max-width: 768px)
+            margin: 0 auto
 
 
     .dates-wrapper
       display: flex
       align-items: center
       justify-content: center
-      position: absolute
-      top: 0
-      right: 150px
-      bottom: 0
+
+      @media(max-width: 992px)
+        display: block
+
+      .nav
+        @media(max-width: 992px)
+          display: block
+          text-align: center
 
     .nav-pills
       border-left: 1px solid #e5e5e5
@@ -344,21 +421,38 @@ $gray: #808080
       right: 150px
       z-index: 9999
 
+      @media(max-width: 992px)
+        border: none
+        margin-bottom: 25px
+
+
       a
         background: transparent
         color: $black-blue
-        display: flex
+        display: inline-flex
         align-items: center
         justify-content: center
         text-align: center
         border-radius: 0
         border-bottom: 1px solid #e5e5e5
+        width: 100px
+
+        @media(max-width: 992px)
+          border: none
+          border-left: 1px solid #e5e5e5
+
+        @media(max-width: 530px)
+          padding: 10px
+          width: 50px
 
         .event-date
           .day
             font-family: LT-Bold
             margin: 0
             font-size: 50px
+
+            @media(max-width: 530px)
+              font-size: 25px
 
           .month
             font-size: 14px
@@ -368,27 +462,55 @@ $gray: #808080
       a:last-child
         border-bottom: none
 
+        @media(max-width: 992px)
+          border-left: none
+
       a.active
         border-left: 3px solid $yellow
+
+        @media(max-width: 992px)
+          border-left: 1px solid #e5e5e5
+          border-top: 3px solid $yellow
 
 
   /*contact us*/
   .contact-us
-    padding: 100px
+    padding: 150px 100px
     background: #a5a5a5 url('../img/scroll/photo/bg2.jpg') center no-repeat
     background-size: cover
 
+    @media(max-width: 767px)
+      padding: 150px 20px
+
     .contact-details
+      margin-top: 150px
+      @media(max-width: 600px)
+        margin-top: 50px
       h2
         color: $gray
         font-family: LT-Bold
         width: 800px
+
+        @media(max-width: 1030px)
+          width: 600px
+
+        @media(max-width: 767px)
+          width: 80%
+
+        @media(max-width: 412px)
+          font-size: 25px
 
       h4
         color: $gray
         font-family: LT-Bold
         margin: 25px 0
         width: 600px
+
+        @media(max-width: 767px)
+          width: 80%
+
+        @media(max-width: 412px)
+          font-size: 18px
 
         a
           color: $yellow
@@ -397,8 +519,16 @@ $gray: #808080
       position: absolute
       text-align: center
       color: $gray
-      bottom: 400px
+      bottom: 250px
       left: 400px
+
+      @media(max-width: 1280px)
+        bottom: 200px
+        left: 200px
+
+      @media(max-width: 767px)
+        bottom: 150px
+        left: 150px
 
       img
         margin-top: 10px
