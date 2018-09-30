@@ -46,6 +46,10 @@ $(document).ready(function() {
 
   });
 
+	$('.login-modal').modal({
+		show: false
+	});
+
 	//methods
 	$.fn.fullpage.setAllowScrolling(true);
 

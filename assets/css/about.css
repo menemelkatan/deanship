@@ -1,0 +1,364 @@
+/*colors */
+/*fonts */
+@font-face {
+  font-family: LT-Light;
+  src: url("../fonts/FrutigerLTArabic-45Light.ttf");
+}
+@font-face {
+  font-family: LT-Roman;
+  src: url("../fonts/FrutigerLTArabic-55Roman.ttf");
+}
+@font-face {
+  font-family: LT-Bold;
+  src: url("../fonts/FrutigerLTArabic-65Bold.ttf");
+}
+@font-face {
+  font-family: LT-Black;
+  src: url("../fonts/FrutigerLTArabic-75Black.ttf");
+}
+/*public */
+/* line 26, ../sass/_public.sass */
+* {
+  font-family: LT-Light;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 32, ../sass/_public.sass */
+.fp-section.fp-table, .fp-slide.fp-table {
+  display: block;
+}
+
+/* line 35, ../sass/_public.sass */
+.fp-tableCell {
+  display: block;
+}
+
+/* line 38, ../sass/_public.sass */
+.line-top-title {
+  position: relative;
+  font-family: LT-Bold;
+}
+/* line 42, ../sass/_public.sass */
+.line-top-title:after {
+  bottom: 110%;
+  right: 0;
+  width: 60px;
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: #f6c103;
+}
+
+/* line 51, ../sass/_public.sass */
+.dotted-btn {
+  position: relative;
+  padding: 0;
+  text-decoration: none !important;
+  color: #5a8d9b;
+}
+/* line 57, ../sass/_public.sass */
+.dotted-btn:before {
+  position: absolute;
+  content: "";
+  top: 25%;
+  right: -5px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #f6c103;
+  z-index: -1;
+  opacity: 0.8;
+  -webkit-transition: 0.2s ease-in-out all;
+  transition: 0.2s ease-in-out all;
+}
+/* line 70, ../sass/_public.sass */
+.dotted-btn:hover:before {
+  width: calc(100% + 10px);
+  border-radius: 10px;
+}
+
+/* line 75, ../sass/_public.sass */
+.deanship--content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*deanship navbar */
+/* line 83, ../sass/_public.sass */
+.deanship-navbar {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  padding: 30px 0px;
+  z-index: 9999;
+}
+/* line 90, ../sass/_public.sass */
+.deanship-navbar .navbar-brand {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: block !important;
+}
+@media(max-width: 992px) {
+  /* line 96, ../sass/_public.sass */
+  .deanship-navbar .navbar-nav {
+    background: #808080;
+    margin-top: 50px;
+  }
+}
+/* line 101, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .nav-item:not(.dropdown) {
+  margin: 0 40px;
+  position: relative;
+}
+@media(max-width: 1100px) {
+  /* line 101, ../sass/_public.sass */
+  .deanship-navbar .navbar-nav .nav-item:not(.dropdown) {
+    margin: 0 20px;
+  }
+}
+/* line 106, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .nav-item:not(.dropdown) a {
+  color: black;
+  font-size: 12px;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+/* line 113, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 100%;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #f6c103;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.1s ease-in-out all;
+  transition: 0.1s ease-in-out all;
+}
+/* line 125, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:before {
+  position: absolute;
+  content: "";
+  top: 55%;
+  left: 5%;
+  height: 2px;
+  width: 0;
+  opacity: 0.8;
+  background: #f6c103;
+  z-index: -1;
+  -webkit-transition: 0.1s ease-in-out all;
+  transition: 0.1s ease-in-out all;
+}
+/* line 137, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/* line 140, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:hover:before {
+  width: 85%;
+}
+/* line 145, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .nav-item.active:not(.dropdown) a:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/* line 148, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .nav-item.active:not(.dropdown) a:before {
+  width: 85%;
+}
+/* line 152, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .nav-item.scroll-item:not(:first-of-type):after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 2px;
+  background: black;
+  border-radius: 2px;
+  top: 45%;
+  left: 150%;
+}
+@media(max-width: 1100px) {
+  /* line 152, ../sass/_public.sass */
+  .deanship-navbar .navbar-nav .nav-item.scroll-item:not(:first-of-type):after {
+    left: 130%;
+  }
+}
+@media(max-width: 992px) {
+  /* line 165, ../sass/_public.sass */
+  .deanship-navbar .navbar-nav .dropdown {
+    margin: 0 15px;
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+}
+/* line 169, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .dropdown a:after {
+  opacity: 0;
+}
+/* line 172, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .dropdown .dropdown-menu {
+  background: #23454c;
+  padding: 0;
+}
+/* line 175, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .dropdown .dropdown-menu a {
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+/* line 180, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .dropdown .dropdown-menu a:hover {
+  color: #23454c;
+}
+/* line 183, ../sass/_public.sass */
+.deanship-navbar .navbar-nav .dropdown .dropdown-menu .dropdown-divider {
+  margin: 0;
+}
+/* line 187, ../sass/_public.sass */
+.deanship-navbar .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+/*deanship-footer */
+/* line 194, ../sass/_public.sass */
+.deanship-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px;
+}
+/* line 203, ../sass/_public.sass */
+.deanship-footer a {
+  color: black;
+  font-size: 11px;
+  padding: 5px;
+}
+/* line 208, ../sass/_public.sass */
+.deanship-footer a .deanship--icon {
+  margin-left: 10px;
+}
+/* line 212, ../sass/_public.sass */
+.deanship-footer .footer-contact-nav .nav-item {
+  margin: 0 5px;
+}
+/* line 215, ../sass/_public.sass */
+.deanship-footer .copyright {
+  color: black;
+  font-size: 11px;
+}
+
+/*about us page */
+/* line 6, ../sass/about.sass */
+.about-page {
+  padding: 120px 100px;
+}
+@media(max-width: 930px) {
+  /* line 6, ../sass/about.sass */
+  .about-page {
+    padding: 120px 30px;
+  }
+}
+/* line 11, ../sass/about.sass */
+.about-page .about-nav {
+  padding: 0;
+}
+/* line 13, ../sass/about.sass */
+.about-page .about-nav .nav-pills {
+  z-index: 9999;
+}
+/* line 16, ../sass/about.sass */
+.about-page .about-nav .nav-pills a {
+  background: transparent;
+  text-align: right;
+  border-radius: 0;
+  padding: 10px;
+  position: relative;
+  color: black;
+  z-index: 2;
+  display: block;
+}
+/* line 26, ../sass/about.sass */
+.about-page .about-nav .nav-pills a span {
+  position: relative;
+}
+/* line 28, ../sass/about.sass */
+.about-page .about-nav .nav-pills a span:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 100%;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: black;
+  -webkit-transition: 0.1s ease-in-out all;
+  transition: 0.1s ease-in-out all;
+}
+/* line 40, ../sass/about.sass */
+.about-page .about-nav .nav-pills a span:after {
+  position: absolute;
+  content: "";
+  top: 58%;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #f6c103;
+  z-index: -1;
+}
+/* line 53, ../sass/about.sass */
+.about-page .about-nav .nav-pills .active span:before {
+  background: #f6c103;
+}
+/* line 56, ../sass/about.sass */
+.about-page .about-nav .nav-pills .active span:after {
+  width: 110%;
+}
+/* line 60, ../sass/about.sass */
+.about-page .tab-content {
+  border-right: 1px solid #e5e5e5;
+}
+/* line 62, ../sass/about.sass */
+.about-page .tab-content .about-deanship-quote {
+  padding: 0 50px;
+}
+/* line 65, ../sass/about.sass */
+.about-page .tab-content .about-deanship-quote p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #808080;
+}
+/* line 71, ../sass/about.sass */
+.about-page .tab-content .about-deanship-quote .quote-thumbnail {
+  width: 300px;
+}
+/* line 75, ../sass/about.sass */
+.about-page .tab-content .about-deanship-quote .col-md-8, .about-page .tab-content .about-deanship-quote .col-md-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*# sourceMappingURL=about.css.map */

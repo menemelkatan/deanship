@@ -28,19 +28,12 @@
   </head>
   <body>
 
-    <!-- <div id="fullpage">
-    	<div class="section">Some section</div>
-    	<div class="section">Some section</div>
-    	<div class="section">Some section</div>
-    	<div class="section">Some section</div>
-    </div> -->
-
 
     <!-- scroll page content -->
     <div class="deanship--content">
 
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light landing-navbar">
+      <nav class="navbar navbar-expand-lg navbar-light landing-navbar deanship-navbar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <img src="assets/img/header-footer/menu_white.png" class="deanship--icon menu" alt="">
         </button>
@@ -62,7 +55,7 @@
             </li>
 
             <li class="nav-item login-item">
-              <a class="nav-link colorable" href="#">تسجيل الدخول</a>
+              <a class="nav-link colorable" href="#!" data-toggle="modal" data-target=".login-modal">تسجيل الدخول</a>
             </li>
             <li class="nav-item scroll-item" data-menuanchor="about-us">
               <a class="nav-link colorable" href="#about-us">عن العمادة <span class="sr-only">(current)</span></a>
@@ -116,7 +109,7 @@
                     التدريس، وتوظيف التكنولوجيا في عصرية تتطلع إلى
                   </p>
 
-                  <button type="button" class="btn btn-link dotted-btn">معرفة المزيد</button>
+                  <a href="about.html" class="btn btn-link dotted-btn">معرفة المزيد</a>
                 </div>
               </div>
             </div>
@@ -295,7 +288,7 @@
       <!-- end left-sidebar -->
 
       <!-- footer -->
-      <footer class="landing-footer">
+      <footer class="landing-footer deanship-footer">
         <span class="copyright colorable">
           Copyright © 2018 E-learning Deanship
         </span>
@@ -334,6 +327,29 @@
 
     </div>
     <!-- end scroll page content -->
+
+
+    <div class="modal fade login-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm login-modal-dialog">
+        <div class="modal-content">
+          <form class="login-form" action="">
+            <h2 class="form-title">تسجيل الدخول</h2>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="إسم المستخدم">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="كلمة المرور">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="forgotPass">
+              <label class="form-check-label" for="forgotPass">نسيت كلمة المرور</label>
+            </div>
+            <button type="submit" class="btn btn-link">موافق</button>
+            <a type="button" href="#!" class="btn btn-link">إنشاء حساب</a>
+          </form>
+        </div>
+      </div>
+    </div>
 
 
 

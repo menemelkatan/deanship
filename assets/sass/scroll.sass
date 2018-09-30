@@ -1,208 +1,23 @@
-/*colors*/
-$black-blue: #23454c
-$yellow: #f6c103
-$light-blue: #5a8d9b
-$gray: #808080
+@import public
 
-/*fonts*/
-@font-face
-  font-family: LT-Light
-  src: url('../fonts/FrutigerLTArabic-45Light.ttf')
-
-@font-face
-  font-family: LT-Roman
-  src: url('../fonts/FrutigerLTArabic-55Roman.ttf')
-
-@font-face
-  font-family: LT-Bold
-  src: url('../fonts/FrutigerLTArabic-65Bold.ttf')
-
-@font-face
-  font-family: LT-Black
-  src: url('../fonts/FrutigerLTArabic-75Black.ttf')
-
-
-/*public*/
-*
-  font-family: LT-Light
-  padding: 0
-  margin: 0
-  box-sizing: border-box
-
-.fp-section.fp-table, .fp-slide.fp-table
-  display: block
-
-.fp-tableCell
-  display: block
-
-.dotted-btn
-  position: relative
-  padding: 0
-  text-decoration: none !important
-  color: $light-blue
-  display: block
-
-  &:before
-    position: absolute
-    content: ""
-    top: 25%
-    right: -5px
-    height: 18px
-    width: 18px
-    border-radius: 50%
-    background: $yellow
-    z-index: -1
-    opacity: 0.8
-    transition: 0.2s ease-in-out all
-
-  &:hover:before
-    width: calc(100% + 10px)
-    border-radius: 10px
-
-
-.deanship--content
-  position: fixed
-  top: 0
-  right: 0
-  bottom: 0
-  left: 0
-
-
+  
 /*landing-navbar*/
 .landing-navbar
-  background-color: transparent
-  position: fixed
-  width: 100%
-  padding: 30px 0px
-  z-index: 9999
-
-  .navbar-brand
-    position: fixed
-    top: 20px
-    left: 20px
-    display: block !important
-
   .navbar-nav
-    @media(max-width: 992px)
-      background: $gray
-      margin-top: 50px
-
     .nav-item:not(.dropdown)
-      margin: 0 40px
-      position: relative
-      @media(max-width: 1100px)
-        margin: 0 20px
       a
         color: white
-        font-size: 12px
-        position: relative
-        z-index: 2
-        display: block
-
-        &:after
-          position: absolute
-          content: ""
-          top: 50%
-          left: 100%
-          height: 6px
-          width: 6px
-          border-radius: 50%
-          background: $yellow
-          transform: scale(0)
-          transition: 0.1s ease-in-out all
-
-        &:before
-          position: absolute
-          content: ""
-          top: 55%
-          left: 5%
-          height: 2px
-          width: 0
-          opacity: 0.8
-          background: $yellow
-          z-index: -1
-          transition: 0.1s ease-in-out all
-
-        &:hover:after
-          transform: scale(1)
-
-        &:hover:before
-          width: 85%
-
-    .nav-item.active:not(.dropdown)
-      a
-        &:after
-          transform: scale(1)
-
-        &:before
-          width: 85%
-
-
     .nav-item.scroll-item:not(:first-of-type):after
-      position: absolute
-      content: ""
-      height: 2px
-      width: 2px
       background: white
-      border-radius: 2px
-      top: 45%
-      left: 150%
-
-      @media(max-width: 1100px)
-        left: 130%
-
-    .dropdown
-      @media(max-width: 992px)
-        margin: 0 15px
-        filter: invert(1)
-      a:after
-        opacity: 0
-
-      .dropdown-menu
-        background: $black-blue
-        padding: 0
-        a
-          color: white
-          font-size: 12px
-          padding: 5px 10px
-
-          &:hover
-            color: $black-blue
-
-        .dropdown-divider
-          margin: 0
-
-
-  .navbar-toggler
-    border: none
-    outline: none
 
 
 /*landing-footer*/
 .landing-footer
-  position: fixed
-  bottom: 0
-  left: 0
-  width: 100%
-  display: flex
-  justify-content: space-between
-  padding: 30px
-
   a
     color: white
-    font-size: 11px
-    padding: 5px
-
-    .deanship--icon
-      margin-left: 10px
-
-  .footer-contact-nav
-    .nav-item
-      margin: 0 5px
 
   .copyright
     color: white
-    font-size: 11px
 
 
 /*landing-sidebar*/
@@ -532,3 +347,78 @@ $gray: #808080
 
       img
         margin-top: 10px
+
+
+
+/*login-modal*/
+.login-modal
+  .login-modal-dialog
+    width: 100%
+    max-width: none
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+    margin: 0
+    overflow: hidden
+
+    .modal-content
+      width: 450px
+      border-radius: 0
+
+      .login-form
+        padding: 50px
+
+        .form-title
+          margin-bottom: 50px
+          font-family: LT-Bold
+          font-size: 25px
+          position: relative
+          display: block
+          z-index: 2
+
+          &:after
+            position: absolute
+            content: ""
+            top: 110%
+            left: 100%
+            height: 6px
+            width: 6px
+            border-radius: 50%
+            background: $yellow
+            transition: 0.1s ease-in-out all
+
+          &:before
+            position: absolute
+            content: ""
+            top: 122%
+            right: 4px
+            height: 2px
+            width: 70px
+            background: $yellow
+            z-index: -1
+
+
+        input.form-control
+          border-radius: 0
+          border-color: #e5e5e5
+          padding: 10px
+          font-size: 18px
+
+        .form-check
+          color: gray
+          margin-bottom: 50px
+          font-size: 18px
+          display: flex
+          align-items: center
+
+
+        .btn
+          padding: 0
+          margin-left: 20px
+          font-size: 18px
+          font-family: LT-Bold
+          color: $light-blue
+          text-decoration: none
+          &:hover
+            color: $yellow
