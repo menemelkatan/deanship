@@ -27,23 +27,48 @@
 }
 
 /* line 32, ../sass/_public.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 36, ../sass/_public.sass */
+.collapse {
+  display: none;
+}
+
+/* line 39, ../sass/_public.sass */
 .fp-section.fp-table, .fp-slide.fp-table {
   display: block;
 }
 
-/* line 35, ../sass/_public.sass */
+/* line 42, ../sass/_public.sass */
 .fp-tableCell {
   display: block;
 }
 
-/* line 38, ../sass/_public.sass */
+/* line 45, ../sass/_public.sass */
+.deanship-article {
+  padding: 20px 50px;
+}
+/* line 48, ../sass/_public.sass */
+.deanship-article .row {
+  margin: 15px 0;
+}
+/* line 50, ../sass/_public.sass */
+.deanship-article p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #808080;
+}
+
+/* line 55, ../sass/_public.sass */
 .line-top-title {
   position: relative;
   font-family: LT-Bold;
 }
-/* line 42, ../sass/_public.sass */
+/* line 59, ../sass/_public.sass */
 .line-top-title:after {
-  bottom: 110%;
+  bottom: 85%;
   right: 0;
   width: 60px;
   content: "";
@@ -52,14 +77,14 @@
   background: #f6c103;
 }
 
-/* line 51, ../sass/_public.sass */
+/* line 68, ../sass/_public.sass */
 .dotted-btn {
   position: relative;
   padding: 0;
   text-decoration: none !important;
   color: #5a8d9b;
 }
-/* line 57, ../sass/_public.sass */
+/* line 74, ../sass/_public.sass */
 .dotted-btn:before {
   position: absolute;
   content: "";
@@ -74,13 +99,13 @@
   -webkit-transition: 0.2s ease-in-out all;
   transition: 0.2s ease-in-out all;
 }
-/* line 70, ../sass/_public.sass */
+/* line 87, ../sass/_public.sass */
 .dotted-btn:hover:before {
   width: calc(100% + 10px);
   border-radius: 10px;
 }
 
-/* line 75, ../sass/_public.sass */
+/* line 92, ../sass/_public.sass */
 .deanship--content {
   position: fixed;
   top: 0;
@@ -90,15 +115,15 @@
 }
 
 /*deanship navbar */
-/* line 83, ../sass/_public.sass */
+/* line 100, ../sass/_public.sass */
 .deanship-navbar {
   background-color: transparent;
   position: fixed;
   width: 100%;
-  padding: 30px 0px;
+  padding: 30px 20px;
   z-index: 9999;
 }
-/* line 90, ../sass/_public.sass */
+/* line 107, ../sass/_public.sass */
 .deanship-navbar .navbar-brand {
   position: fixed;
   top: 20px;
@@ -106,24 +131,24 @@
   display: block !important;
 }
 @media(max-width: 992px) {
-  /* line 96, ../sass/_public.sass */
+  /* line 113, ../sass/_public.sass */
   .deanship-navbar .navbar-nav {
     background: #808080;
     margin-top: 50px;
   }
 }
-/* line 101, ../sass/_public.sass */
+/* line 118, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) {
   margin: 0 40px;
   position: relative;
 }
 @media(max-width: 1100px) {
-  /* line 101, ../sass/_public.sass */
+  /* line 118, ../sass/_public.sass */
   .deanship-navbar .navbar-nav .nav-item:not(.dropdown) {
     margin: 0 20px;
   }
 }
-/* line 106, ../sass/_public.sass */
+/* line 123, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a {
   color: black;
   font-size: 12px;
@@ -131,7 +156,7 @@
   z-index: 2;
   display: block;
 }
-/* line 113, ../sass/_public.sass */
+/* line 130, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:after {
   position: absolute;
   content: "";
@@ -146,7 +171,7 @@
   -webkit-transition: 0.1s ease-in-out all;
   transition: 0.1s ease-in-out all;
 }
-/* line 125, ../sass/_public.sass */
+/* line 142, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:before {
   position: absolute;
   content: "";
@@ -160,25 +185,25 @@
   -webkit-transition: 0.1s ease-in-out all;
   transition: 0.1s ease-in-out all;
 }
-/* line 137, ../sass/_public.sass */
+/* line 154, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:hover:after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-/* line 140, ../sass/_public.sass */
+/* line 157, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:hover:before {
   width: 85%;
 }
-/* line 145, ../sass/_public.sass */
+/* line 162, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item.active:not(.dropdown) a:after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-/* line 148, ../sass/_public.sass */
+/* line 165, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item.active:not(.dropdown) a:before {
   width: 85%;
 }
-/* line 152, ../sass/_public.sass */
+/* line 169, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item.scroll-item:not(:first-of-type):after {
   position: absolute;
   content: "";
@@ -190,50 +215,50 @@
   left: 150%;
 }
 @media(max-width: 1100px) {
-  /* line 152, ../sass/_public.sass */
+  /* line 169, ../sass/_public.sass */
   .deanship-navbar .navbar-nav .nav-item.scroll-item:not(:first-of-type):after {
     left: 130%;
   }
 }
 @media(max-width: 992px) {
-  /* line 165, ../sass/_public.sass */
+  /* line 182, ../sass/_public.sass */
   .deanship-navbar .navbar-nav .dropdown {
     margin: 0 15px;
     -webkit-filter: invert(1);
             filter: invert(1);
   }
 }
-/* line 169, ../sass/_public.sass */
+/* line 186, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown a:after {
   opacity: 0;
 }
-/* line 172, ../sass/_public.sass */
+/* line 189, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu {
   background: #23454c;
   padding: 0;
 }
-/* line 175, ../sass/_public.sass */
+/* line 192, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu a {
   color: white;
   font-size: 12px;
   padding: 5px 10px;
 }
-/* line 180, ../sass/_public.sass */
+/* line 197, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu a:hover {
   color: #23454c;
 }
-/* line 183, ../sass/_public.sass */
+/* line 200, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu .dropdown-divider {
   margin: 0;
 }
-/* line 187, ../sass/_public.sass */
+/* line 204, ../sass/_public.sass */
 .deanship-navbar .navbar-toggler {
   border: none;
   outline: none;
 }
 
 /*deanship-footer */
-/* line 194, ../sass/_public.sass */
+/* line 211, ../sass/_public.sass */
 .deanship-footer {
   position: fixed;
   bottom: 0;
@@ -247,47 +272,57 @@
           justify-content: space-between;
   padding: 30px;
 }
-/* line 203, ../sass/_public.sass */
+/* line 220, ../sass/_public.sass */
 .deanship-footer a {
   color: black;
   font-size: 11px;
   padding: 5px;
 }
-/* line 208, ../sass/_public.sass */
+/* line 225, ../sass/_public.sass */
 .deanship-footer a .deanship--icon {
   margin-left: 10px;
 }
-/* line 212, ../sass/_public.sass */
+/* line 229, ../sass/_public.sass */
 .deanship-footer .footer-contact-nav .nav-item {
   margin: 0 5px;
 }
-/* line 215, ../sass/_public.sass */
+/* line 232, ../sass/_public.sass */
 .deanship-footer .copyright {
   color: black;
   font-size: 11px;
 }
 
+/* line 5, ../sass/about.sass */
+.deanship-footer {
+  background: white;
+}
+
 /*about us page */
-/* line 6, ../sass/about.sass */
-.about-page {
-  padding: 120px 100px;
-}
-@media(max-width: 930px) {
-  /* line 6, ../sass/about.sass */
-  .about-page {
-    padding: 120px 30px;
-  }
-}
 /* line 11, ../sass/about.sass */
-.about-page .about-nav {
-  padding: 0;
+.about-page-2 .deanship-navbar {
+  background: white;
 }
-/* line 13, ../sass/about.sass */
-.about-page .about-nav .nav-pills {
+/* line 15, ../sass/about.sass */
+.about-page-2 .section {
+  padding: 100px;
+  padding-right: 250px;
+}
+/* line 19, ../sass/about.sass */
+.about-page-2 .about-nav {
+  margin-top: 150px;
+  padding: 0 20px;
+  margin-right: 30px;
+  border-left: 1px solid #e5e5e5;
+  position: fixed;
+  z-index: 999999;
+}
+/* line 26, ../sass/about.sass */
+.about-page-2 .about-nav .nav {
   z-index: 9999;
+  border: none;
 }
-/* line 16, ../sass/about.sass */
-.about-page .about-nav .nav-pills a {
+/* line 30, ../sass/about.sass */
+.about-page-2 .about-nav .nav a {
   background: transparent;
   text-align: right;
   border-radius: 0;
@@ -296,13 +331,14 @@
   color: black;
   z-index: 2;
   display: block;
+  border: none;
 }
-/* line 26, ../sass/about.sass */
-.about-page .about-nav .nav-pills a span {
+/* line 41, ../sass/about.sass */
+.about-page-2 .about-nav .nav a span {
   position: relative;
 }
-/* line 28, ../sass/about.sass */
-.about-page .about-nav .nav-pills a span:before {
+/* line 43, ../sass/about.sass */
+.about-page-2 .about-nav .nav a span:before {
   position: absolute;
   content: "";
   top: 50%;
@@ -314,8 +350,8 @@
   -webkit-transition: 0.1s ease-in-out all;
   transition: 0.1s ease-in-out all;
 }
-/* line 40, ../sass/about.sass */
-.about-page .about-nav .nav-pills a span:after {
+/* line 55, ../sass/about.sass */
+.about-page-2 .about-nav .nav a span:after {
   position: absolute;
   content: "";
   top: 58%;
@@ -325,40 +361,135 @@
   background: #f6c103;
   z-index: -1;
 }
-/* line 53, ../sass/about.sass */
-.about-page .about-nav .nav-pills .active span:before {
+/* line 68, ../sass/about.sass */
+.about-page-2 .about-nav li.active span:before {
   background: #f6c103;
 }
-/* line 56, ../sass/about.sass */
-.about-page .about-nav .nav-pills .active span:after {
+/* line 71, ../sass/about.sass */
+.about-page-2 .about-nav li.active span:after {
   width: 110%;
 }
-/* line 60, ../sass/about.sass */
-.about-page .tab-content {
-  border-right: 1px solid #e5e5e5;
+/* line 76, ../sass/about.sass */
+.about-page-2 .about-nav .nested-tabs li {
+  list-style-type: none;
 }
-/* line 62, ../sass/about.sass */
-.about-page .tab-content .about-deanship-quote {
-  padding: 0 50px;
+/* line 78, ../sass/about.sass */
+.about-page-2 .about-nav .nested-tabs li a {
+  font-size: 13px;
+  position: relative;
+  padding-right: 25px;
+  color: gray;
 }
-/* line 65, ../sass/about.sass */
-.about-page .tab-content .about-deanship-quote p {
-  font-size: 14px;
-  margin-top: 20px;
-  color: #808080;
+/* line 85, ../sass/about.sass */
+.about-page-2 .about-nav .nested-tabs li a div:before {
+  position: absolute;
+  content: "";
+  top: 60%;
+  left: 95%;
+  height: 1px;
+  width: 6px;
+  border-radius: 0;
+  background: black;
 }
-/* line 71, ../sass/about.sass */
-.about-page .tab-content .about-deanship-quote .quote-thumbnail {
+/* line 96, ../sass/about.sass */
+.about-page-2 .about-nav .nested-tabs .active div {
+  color: black;
+  font-family: LT-Bold;
+}
+/* line 104, ../sass/about.sass */
+.about-page-2 .section .about-deanship-quote .quote-thumbnail {
   width: 300px;
 }
-/* line 75, ../sass/about.sass */
-.about-page .tab-content .about-deanship-quote .col-md-8, .about-page .tab-content .about-deanship-quote .col-md-4 {
+/* line 108, ../sass/about.sass */
+.about-page-2 .section .our-stories {
+  padding: 0 50px;
+}
+/* line 111, ../sass/about.sass */
+.about-page-2 .section .our-stories .nested-stories {
+  border: none;
+}
+/* line 114, ../sass/about.sass */
+.about-page-2 .section .our-stories .story {
+  padding: 10px;
+}
+/* line 116, ../sass/about.sass */
+.about-page-2 .section .our-stories .story a {
+  border: none;
+  color: black;
+  -webkit-transition: 0.2s ease-in all;
+  transition: 0.2s ease-in all;
+}
+/* line 120, ../sass/about.sass */
+.about-page-2 .section .our-stories .story a:hover {
+  opacity: 0.5;
+}
+/* line 123, ../sass/about.sass */
+.about-page-2 .section .our-stories .story a:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+/* line 125, ../sass/about.sass */
+.about-page-2 .section .our-stories .story .story-thumbnail {
+  width: 100%;
+}
+/* line 131, ../sass/about.sass */
+.about-page-2 .single-story .story-slider {
+  width: 80%;
+  margin-right: 50px;
+  position: relative;
+}
+/* line 136, ../sass/about.sass */
+.about-page-2 .single-story .story-slider .carousel-indicators {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: 101.9%;
+  margin: 0;
+  right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 148, ../sass/about.sass */
+.about-page-2 .single-story .story-slider .carousel-indicators:after, .about-page-2 .single-story .story-slider .carousel-indicators:before {
+  content: "";
+  height: 80px;
+  width: 2px;
+  background: #e5e5e5;
+}
+/* line 153, ../sass/about.sass */
+.about-page-2 .single-story .story-slider .carousel-indicators li {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+/* line 160, ../sass/about.sass */
+.about-page-2 .single-story .story-slider .carousel-indicators li.active {
+  background: #f6c103;
+  border-color: #f6c103;
+}
+/* line 164, ../sass/about.sass */
+.about-page-2 .single-story .story-details {
+  width: 80%;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+/* line 168, ../sass/about.sass */
+.about-page-2 .single-story .story-details p {
+  color: #808080;
+}
+/* line 171, ../sass/about.sass */
+.about-page-2 .single-story .story-details .line-top-title {
+  padding-bottom: 25px;
 }
 
+/************ F A D I N G   E F F E C T *********** */
 /*# sourceMappingURL=about.css.map */

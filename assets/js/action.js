@@ -42,22 +42,61 @@ $(document).ready(function() {
 
       $('.current-index').text(destination.index+1)
   	}
-	}, {
-
-  });
+	});
 
 	$('.login-modal').modal({
 		show: false
 	});
 
-	//methods
-	$.fn.fullpage.setAllowScrolling(true);
-
-  console.log(fullpage_api.getActiveSection().anchor);
 
   $('.carousel').carousel();
-  $('#myTab a').on('click', function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
+
+
+	$('body').click(function(evt){
+    if(!$(evt.target).is('.story a')) {
+        //event handling code
+				$('.story a').removeClass('show active').attr('aria-selected', 'false');
+    }
+	});
+
+	$('body').click(function(evt){
+    if(!$(evt.target).is('.nested-tabs a')) {
+        //event handling code
+				$('.nested-tabs a').removeClass('show active').attr('aria-selected', 'false');
+    }
+	});
+
+	console.log($('.story-section').length);
+
+	$('#aboutpage').fullpage({
+		//options here
+    menu: '#about-side-menu',
+    anchors:['quote', 'stories', 'story1', 'story2', 'story3', 'news1', 'news2'],
+
+		continuousVertical: true,
+		scrollHorizontally: true,
+		scrollOverflow: true,
+		scrollHorizontally: true,
+		slideSelector: '.fullpage-slide',
+		afterResponsive: function(isResponsive){},
+    onLeave: function(origin, destination, direction){
+  		//it won't scroll if the destination is the 3rd section
+			console.log(destination.index);
+
+			if(destination.index > 0 && destination.index <= $('.story-section').length+1){
+				$('#collapseStories').addClass('show');
+			}
+			else{
+				$('#collapseStories').removeClass('show');
+			}
+
+			if(destination.index > 4 && destination.index <= 4 + $('.news-section').length){
+				$('#collapseNews').addClass('show').children().removeClass('active');
+			}
+			else{
+				$('#collapseNews').removeClass('show');
+			}
+  		}
+	});
+
 });

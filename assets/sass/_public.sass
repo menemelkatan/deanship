@@ -29,18 +29,35 @@ $gray: #808080
   margin: 0
   box-sizing: border-box
 
+img
+  max-width: 100%
+
+
+.collapse
+  display: none
+
 .fp-section.fp-table, .fp-slide.fp-table
   display: block
 
 .fp-tableCell
   display: block
 
+.deanship-article
+  padding: 20px 50px
+
+  .row
+    margin: 15px 0
+  p
+    font-size: 18px
+    margin-top: 20px
+    color: $gray
+
 .line-top-title
   position: relative
   font-family: LT-Bold
 
   &:after
-    bottom: 110%
+    bottom: 85%
     right: 0
     width: 60px
     content: ""
@@ -84,7 +101,7 @@ $gray: #808080
   background-color: transparent
   position: fixed
   width: 100%
-  padding: 30px 0px
+  padding: 30px 20px
   z-index: 9999
 
   .navbar-brand
