@@ -22,6 +22,10 @@ $gray: #808080
   src: url('../fonts/FrutigerLTArabic-75Black.ttf')
 
 
+h2
+  @media(max-width: 620px)
+    font-size: 20px
+
 /*public*/
 *
   font-family: LT-Light
@@ -51,6 +55,9 @@ img
     font-size: 18px
     margin-top: 20px
     color: $gray
+
+    @media(max-width: 620px)
+      font-size: 12px
 
 .line-top-title
   position: relative
@@ -217,6 +224,12 @@ img
   justify-content: space-between
   padding: 30px
 
+  @media(max-width: 720px)
+    padding: 10px
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+
   a
     color: black
     font-size: 11px
@@ -225,7 +238,14 @@ img
     .deanship--icon
       margin-left: 10px
 
+      @media(max-width: 720px)
+        margin-left: 3px
+
   .footer-contact-nav
+    @media(max-width: 720px)
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
     .nav-item
       margin: 0 5px
 

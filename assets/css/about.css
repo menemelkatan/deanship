@@ -16,8 +16,14 @@
   font-family: LT-Black;
   src: url("../fonts/FrutigerLTArabic-75Black.ttf");
 }
+@media(max-width: 620px) {
+  /* line 25, ../sass/_public.sass */
+  h2 {
+    font-size: 20px;
+  }
+}
 /*public */
-/* line 26, ../sass/_public.sass */
+/* line 30, ../sass/_public.sass */
 * {
   font-family: LT-Light;
   padding: 0;
@@ -26,47 +32,52 @@
           box-sizing: border-box;
 }
 
-/* line 32, ../sass/_public.sass */
+/* line 36, ../sass/_public.sass */
 img {
   max-width: 100%;
 }
 
-/* line 36, ../sass/_public.sass */
+/* line 40, ../sass/_public.sass */
 .collapse {
   display: none;
 }
 
-/* line 39, ../sass/_public.sass */
+/* line 43, ../sass/_public.sass */
 .fp-section.fp-table, .fp-slide.fp-table {
   display: block;
 }
 
-/* line 42, ../sass/_public.sass */
+/* line 46, ../sass/_public.sass */
 .fp-tableCell {
   display: block;
 }
 
-/* line 45, ../sass/_public.sass */
+/* line 49, ../sass/_public.sass */
 .deanship-article {
   padding: 20px 50px;
 }
-/* line 48, ../sass/_public.sass */
+/* line 52, ../sass/_public.sass */
 .deanship-article .row {
   margin: 15px 0;
 }
-/* line 50, ../sass/_public.sass */
+/* line 54, ../sass/_public.sass */
 .deanship-article p {
   font-size: 18px;
   margin-top: 20px;
   color: #808080;
 }
-
-/* line 55, ../sass/_public.sass */
+@media(max-width: 620px) {
+  /* line 54, ../sass/_public.sass */
+  .deanship-article p {
+    font-size: 12px;
+  }
+}
+/* line 62, ../sass/_public.sass */
 .line-top-title {
   position: relative;
   font-family: LT-Bold;
 }
-/* line 59, ../sass/_public.sass */
+/* line 66, ../sass/_public.sass */
 .line-top-title:after {
   bottom: 85%;
   right: 0;
@@ -77,14 +88,14 @@ img {
   background: #f6c103;
 }
 
-/* line 68, ../sass/_public.sass */
+/* line 75, ../sass/_public.sass */
 .dotted-btn {
   position: relative;
   padding: 0;
   text-decoration: none !important;
   color: #5a8d9b;
 }
-/* line 74, ../sass/_public.sass */
+/* line 81, ../sass/_public.sass */
 .dotted-btn:before {
   position: absolute;
   content: "";
@@ -99,13 +110,13 @@ img {
   -webkit-transition: 0.2s ease-in-out all;
   transition: 0.2s ease-in-out all;
 }
-/* line 87, ../sass/_public.sass */
+/* line 94, ../sass/_public.sass */
 .dotted-btn:hover:before {
   width: calc(100% + 10px);
   border-radius: 10px;
 }
 
-/* line 92, ../sass/_public.sass */
+/* line 99, ../sass/_public.sass */
 .deanship--content {
   position: fixed;
   top: 0;
@@ -115,7 +126,7 @@ img {
 }
 
 /*deanship navbar */
-/* line 100, ../sass/_public.sass */
+/* line 107, ../sass/_public.sass */
 .deanship-navbar {
   background-color: transparent;
   position: fixed;
@@ -123,7 +134,7 @@ img {
   padding: 30px 20px;
   z-index: 9999;
 }
-/* line 107, ../sass/_public.sass */
+/* line 114, ../sass/_public.sass */
 .deanship-navbar .navbar-brand {
   position: fixed;
   top: 20px;
@@ -131,24 +142,24 @@ img {
   display: block !important;
 }
 @media(max-width: 992px) {
-  /* line 113, ../sass/_public.sass */
+  /* line 120, ../sass/_public.sass */
   .deanship-navbar .navbar-nav {
     background: #808080;
     margin-top: 50px;
   }
 }
-/* line 118, ../sass/_public.sass */
+/* line 125, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) {
   margin: 0 40px;
   position: relative;
 }
 @media(max-width: 1100px) {
-  /* line 118, ../sass/_public.sass */
+  /* line 125, ../sass/_public.sass */
   .deanship-navbar .navbar-nav .nav-item:not(.dropdown) {
     margin: 0 20px;
   }
 }
-/* line 123, ../sass/_public.sass */
+/* line 130, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a {
   color: black;
   font-size: 12px;
@@ -156,7 +167,7 @@ img {
   z-index: 2;
   display: block;
 }
-/* line 130, ../sass/_public.sass */
+/* line 137, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:after {
   position: absolute;
   content: "";
@@ -171,7 +182,7 @@ img {
   -webkit-transition: 0.1s ease-in-out all;
   transition: 0.1s ease-in-out all;
 }
-/* line 142, ../sass/_public.sass */
+/* line 149, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:before {
   position: absolute;
   content: "";
@@ -185,25 +196,25 @@ img {
   -webkit-transition: 0.1s ease-in-out all;
   transition: 0.1s ease-in-out all;
 }
-/* line 154, ../sass/_public.sass */
+/* line 161, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:hover:after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-/* line 157, ../sass/_public.sass */
+/* line 164, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:hover:before {
   width: 85%;
 }
-/* line 162, ../sass/_public.sass */
+/* line 169, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item.active:not(.dropdown) a:after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-/* line 165, ../sass/_public.sass */
+/* line 172, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item.active:not(.dropdown) a:before {
   width: 85%;
 }
-/* line 169, ../sass/_public.sass */
+/* line 176, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item.scroll-item:not(:first-of-type):after {
   position: absolute;
   content: "";
@@ -215,50 +226,50 @@ img {
   left: 150%;
 }
 @media(max-width: 1100px) {
-  /* line 169, ../sass/_public.sass */
+  /* line 176, ../sass/_public.sass */
   .deanship-navbar .navbar-nav .nav-item.scroll-item:not(:first-of-type):after {
     left: 130%;
   }
 }
 @media(max-width: 992px) {
-  /* line 182, ../sass/_public.sass */
+  /* line 189, ../sass/_public.sass */
   .deanship-navbar .navbar-nav .dropdown {
     margin: 0 15px;
     -webkit-filter: invert(1);
             filter: invert(1);
   }
 }
-/* line 186, ../sass/_public.sass */
+/* line 193, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown a:after {
   opacity: 0;
 }
-/* line 189, ../sass/_public.sass */
+/* line 196, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu {
   background: #23454c;
   padding: 0;
 }
-/* line 192, ../sass/_public.sass */
+/* line 199, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu a {
   color: white;
   font-size: 12px;
   padding: 5px 10px;
 }
-/* line 197, ../sass/_public.sass */
+/* line 204, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu a:hover {
   color: #23454c;
 }
-/* line 200, ../sass/_public.sass */
+/* line 207, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu .dropdown-divider {
   margin: 0;
 }
-/* line 204, ../sass/_public.sass */
+/* line 211, ../sass/_public.sass */
 .deanship-navbar .navbar-toggler {
   border: none;
   outline: none;
 }
 
 /*deanship-footer */
-/* line 211, ../sass/_public.sass */
+/* line 218, ../sass/_public.sass */
 .deanship-footer {
   position: fixed;
   bottom: 0;
@@ -272,21 +283,54 @@ img {
           justify-content: space-between;
   padding: 30px;
 }
-/* line 220, ../sass/_public.sass */
+@media(max-width: 720px) {
+  /* line 218, ../sass/_public.sass */
+  .deanship-footer {
+    padding: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/* line 233, ../sass/_public.sass */
 .deanship-footer a {
   color: black;
   font-size: 11px;
   padding: 5px;
 }
-/* line 225, ../sass/_public.sass */
+/* line 238, ../sass/_public.sass */
 .deanship-footer a .deanship--icon {
   margin-left: 10px;
 }
-/* line 229, ../sass/_public.sass */
+@media(max-width: 720px) {
+  /* line 238, ../sass/_public.sass */
+  .deanship-footer a .deanship--icon {
+    margin-left: 3px;
+  }
+}
+@media(max-width: 720px) {
+  /* line 244, ../sass/_public.sass */
+  .deanship-footer .footer-contact-nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/* line 249, ../sass/_public.sass */
 .deanship-footer .footer-contact-nav .nav-item {
   margin: 0 5px;
 }
-/* line 232, ../sass/_public.sass */
+/* line 252, ../sass/_public.sass */
 .deanship-footer .copyright {
   color: black;
   font-size: 11px;
@@ -307,21 +351,84 @@ img {
   padding: 100px;
   padding-right: 250px;
 }
-/* line 19, ../sass/about.sass */
+@media(max-width: 900px) {
+  /* line 15, ../sass/about.sass */
+  .about-page-2 .section {
+    padding: 100px 50px;
+    padding-right: 250px;
+  }
+}
+@media(max-width: 850px) {
+  /* line 15, ../sass/about.sass */
+  .about-page-2 .section {
+    padding: 100px 10px;
+    padding-right: 200px;
+  }
+}
+@media(max-width: 650px) {
+  /* line 15, ../sass/about.sass */
+  .about-page-2 .section {
+    padding: 100px 10px;
+    padding-top: 0;
+  }
+}
+/* line 31, ../sass/about.sass */
 .about-page-2 .about-nav {
   margin-top: 150px;
   padding: 0 20px;
   margin-right: 30px;
   border-left: 1px solid #e5e5e5;
   position: fixed;
-  z-index: 999999;
+  z-index: 999;
 }
-/* line 26, ../sass/about.sass */
+@media(max-width: 850px) {
+  /* line 31, ../sass/about.sass */
+  .about-page-2 .about-nav {
+    padding: 0 10px;
+    margin-right: 10px;
+  }
+}
+@media(max-width: 650px) {
+  /* line 31, ../sass/about.sass */
+  .about-page-2 .about-nav {
+    margin-top: 80px;
+    margin-right: 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    background: white;
+  }
+}
+@media(max-width: 650px) {
+  /* line 52, ../sass/about.sass */
+  .about-page-2 .about-nav .flex-column {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+/* line 56, ../sass/about.sass */
 .about-page-2 .about-nav .nav {
   z-index: 9999;
   border: none;
 }
-/* line 30, ../sass/about.sass */
+@media(max-width: 650px) {
+  /* line 60, ../sass/about.sass */
+  .about-page-2 .about-nav .nav .nav#about-side-menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+@media(max-width: 650px) {
+  /* line 65, ../sass/about.sass */
+  .about-page-2 .about-nav .nav .nav-item {
+    display: inline-block;
+  }
+}
+/* line 69, ../sass/about.sass */
 .about-page-2 .about-nav .nav a {
   background: transparent;
   text-align: right;
@@ -333,11 +440,11 @@ img {
   display: block;
   border: none;
 }
-/* line 41, ../sass/about.sass */
+/* line 80, ../sass/about.sass */
 .about-page-2 .about-nav .nav a span {
   position: relative;
 }
-/* line 43, ../sass/about.sass */
+/* line 82, ../sass/about.sass */
 .about-page-2 .about-nav .nav a span:before {
   position: absolute;
   content: "";
@@ -350,7 +457,7 @@ img {
   -webkit-transition: 0.1s ease-in-out all;
   transition: 0.1s ease-in-out all;
 }
-/* line 55, ../sass/about.sass */
+/* line 94, ../sass/about.sass */
 .about-page-2 .about-nav .nav a span:after {
   position: absolute;
   content: "";
@@ -361,26 +468,26 @@ img {
   background: #f6c103;
   z-index: -1;
 }
-/* line 68, ../sass/about.sass */
+/* line 107, ../sass/about.sass */
 .about-page-2 .about-nav li.active span:before {
   background: #f6c103;
 }
-/* line 71, ../sass/about.sass */
+/* line 110, ../sass/about.sass */
 .about-page-2 .about-nav li.active span:after {
   width: 110%;
 }
-/* line 76, ../sass/about.sass */
+/* line 115, ../sass/about.sass */
 .about-page-2 .about-nav .nested-tabs li {
   list-style-type: none;
 }
-/* line 78, ../sass/about.sass */
+/* line 117, ../sass/about.sass */
 .about-page-2 .about-nav .nested-tabs li a {
   font-size: 13px;
   position: relative;
   padding-right: 25px;
   color: gray;
 }
-/* line 85, ../sass/about.sass */
+/* line 124, ../sass/about.sass */
 .about-page-2 .about-nav .nested-tabs li a div:before {
   position: absolute;
   content: "";
@@ -391,54 +498,73 @@ img {
   border-radius: 0;
   background: black;
 }
-/* line 96, ../sass/about.sass */
+/* line 135, ../sass/about.sass */
 .about-page-2 .about-nav .nested-tabs .active div {
   color: black;
   font-family: LT-Bold;
 }
-/* line 104, ../sass/about.sass */
+/* line 143, ../sass/about.sass */
 .about-page-2 .section .about-deanship-quote .quote-thumbnail {
   width: 300px;
 }
-/* line 108, ../sass/about.sass */
+/* line 147, ../sass/about.sass */
 .about-page-2 .section .our-stories {
   padding: 0 50px;
 }
-/* line 111, ../sass/about.sass */
+@media(max-width: 900px) {
+  /* line 147, ../sass/about.sass */
+  .about-page-2 .section .our-stories {
+    padding: 0 10px;
+  }
+}
+/* line 153, ../sass/about.sass */
 .about-page-2 .section .our-stories .nested-stories {
   border: none;
 }
-/* line 114, ../sass/about.sass */
+/* line 156, ../sass/about.sass */
 .about-page-2 .section .our-stories .story {
   padding: 10px;
 }
-/* line 116, ../sass/about.sass */
+/* line 158, ../sass/about.sass */
 .about-page-2 .section .our-stories .story a {
   border: none;
   color: black;
   -webkit-transition: 0.2s ease-in all;
   transition: 0.2s ease-in all;
 }
-/* line 120, ../sass/about.sass */
+/* line 162, ../sass/about.sass */
 .about-page-2 .section .our-stories .story a:hover {
   opacity: 0.5;
 }
-/* line 123, ../sass/about.sass */
+/* line 165, ../sass/about.sass */
 .about-page-2 .section .our-stories .story a:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
-/* line 125, ../sass/about.sass */
+/* line 167, ../sass/about.sass */
 .about-page-2 .section .our-stories .story .story-thumbnail {
   width: 100%;
 }
-/* line 131, ../sass/about.sass */
+/* line 173, ../sass/about.sass */
 .about-page-2 .single-story .story-slider {
   width: 80%;
   margin-right: 50px;
   position: relative;
 }
-/* line 136, ../sass/about.sass */
+@media(max-width: 1000px) {
+  /* line 173, ../sass/about.sass */
+  .about-page-2 .single-story .story-slider {
+    width: 100%;
+    margin-right: 20px;
+  }
+}
+@media(max-width: 650px) {
+  /* line 173, ../sass/about.sass */
+  .about-page-2 .single-story .story-slider {
+    margin-right: 0;
+  }
+}
+/* line 186, ../sass/about.sass */
 .about-page-2 .single-story .story-slider .carousel-indicators {
   position: absolute;
   top: 0;
@@ -456,14 +582,14 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-/* line 148, ../sass/about.sass */
+/* line 198, ../sass/about.sass */
 .about-page-2 .single-story .story-slider .carousel-indicators:after, .about-page-2 .single-story .story-slider .carousel-indicators:before {
   content: "";
-  height: 80px;
+  height: 25%;
   width: 2px;
   background: #e5e5e5;
 }
-/* line 153, ../sass/about.sass */
+/* line 203, ../sass/about.sass */
 .about-page-2 .single-story .story-slider .carousel-indicators li {
   height: 10px;
   width: 10px;
@@ -471,25 +597,39 @@ img {
   border: 1px solid #e5e5e5;
   cursor: pointer;
 }
-/* line 160, ../sass/about.sass */
+/* line 210, ../sass/about.sass */
 .about-page-2 .single-story .story-slider .carousel-indicators li.active {
   background: #f6c103;
   border-color: #f6c103;
 }
-/* line 164, ../sass/about.sass */
+/* line 214, ../sass/about.sass */
 .about-page-2 .single-story .story-details {
   width: 80%;
   margin-top: 50px;
   margin-right: 50px;
 }
-/* line 168, ../sass/about.sass */
+@media(max-width: 1000px) {
+  /* line 214, ../sass/about.sass */
+  .about-page-2 .single-story .story-details {
+    width: 100%;
+    margin-right: 20px;
+  }
+}
+@media(max-width: 650px) {
+  /* line 214, ../sass/about.sass */
+  .about-page-2 .single-story .story-details {
+    margin-right: 0;
+  }
+}
+/* line 225, ../sass/about.sass */
 .about-page-2 .single-story .story-details p {
   color: #808080;
 }
-/* line 171, ../sass/about.sass */
+/* line 228, ../sass/about.sass */
 .about-page-2 .single-story .story-details .line-top-title {
   padding-bottom: 25px;
 }
 
 /************ F A D I N G   E F F E C T *********** */
+
 /*# sourceMappingURL=about.css.map */
