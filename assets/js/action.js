@@ -52,51 +52,76 @@ $(document).ready(function() {
   $('.carousel').carousel();
 
 
-	$('body').click(function(evt){
-    if(!$(evt.target).is('.story a')) {
-        //event handling code
-				$('.story a').removeClass('show active').attr('aria-selected', 'false');
-    }
-	});
-
-	$('body').click(function(evt){
-    if(!$(evt.target).is('.nested-tabs a')) {
-        //event handling code
-				$('.nested-tabs a').removeClass('show active').attr('aria-selected', 'false');
-    }
-	});
 
 	console.log($('.story-section').length);
+	// $('.about-page-2').on('scroll', function() {
+	// 		var scrollDistance = $(this).scrollTop();
+	// 		console.log(scrollDistance);
+	// 		// Assign active class to nav links while scolling
+	// 		$('.section').each(function(i) {
+	// 				if ($(this).position().top <= scrollDistance + 100) {
+	// 						$('#about-side-menu li.active').removeClass('active');
+	// 						$('#about-side-menu li').eq(i).addClass('active');
+	// 				}
+	// 		});
+	// });
 
-	$('#aboutpage').fullpage({
-		//options here
-    menu: '#about-side-menu',
-    anchors:['quote', 'stories', 'story1', 'story2', 'story3', 'news1', 'news2'],
+	// $('#aboutpage').fullpage({
+	// 	//options here
+  //   menu: '#about-side-menu',
+  //   anchors:['quote', 'stories', 'story1', 'story2', 'story3', 'news1', 'news2'],
+	//
+	// 	continuousVertical: true,
+	// 	scrollHorizontally: true,
+	// 	scrollOverflow: true,
+	// 	scrollHorizontally: true,
+	// 	slideSelector: '.fullpage-slide',
+	// 	afterResponsive: function(isResponsive){},
+  //   onLeave: function(origin, destination, direction){
+  // 		//it won't scroll if the destination is the 3rd section
+	// 		console.log(destination.index);
+	//
+	// 		if(destination.index > 0 && destination.index <= $('.story-section').length+1){
+	// 			$('#collapseStories').addClass('show');
+	// 		}
+	// 		else{
+	// 			$('#collapseStories').removeClass('show');
+	// 		}
+	//
+	// 		if(destination.index > 4 && destination.index <= 4 + $('.news-section').length){
+	// 			$('#collapseNews').addClass('show').children().removeClass('active');
+	// 		}
+	// 		else{
+	// 			$('#collapseNews').removeClass('show');
+	// 		}
+  // 		}
+	// });
 
-		continuousVertical: true,
-		scrollHorizontally: true,
-		scrollOverflow: true,
-		scrollHorizontally: true,
-		slideSelector: '.fullpage-slide',
-		afterResponsive: function(isResponsive){},
-    onLeave: function(origin, destination, direction){
-  		//it won't scroll if the destination is the 3rd section
-			console.log(destination.index);
 
-			if(destination.index > 0 && destination.index <= $('.story-section').length+1){
-				$('#collapseStories').addClass('show');
-			}
-			else{
-				$('#collapseStories').removeClass('show');
-			}
 
-			if(destination.index > 4 && destination.index <= 4 + $('.news-section').length){
-				$('#collapseNews').addClass('show').children().removeClass('active');
-			}
-			else{
-				$('#collapseNews').removeClass('show');
-			}
-  		}
-	});
+	//smoothscroll
+  $('a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+      $(document).off("scroll");
+
+      $('a').each(function () {
+          $(this).parent().removeClass('active');
+      })
+      $(this).parent().addClass('active');
+
+      var target = this.hash,
+          menu = target;
+      $target = $(target);
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top+2
+      }, 500, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+
+
+
+
+
 
 });
