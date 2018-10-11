@@ -345,6 +345,7 @@ img {
 /* line 9, ../sass/events.sass */
 .events-page {
   overflow: scroll;
+  /*event suggestion form */
 }
 /* line 12, ../sass/events.sass */
 .events-page .deanship-navbar {
@@ -628,6 +629,42 @@ img {
 /* line 224, ../sass/events.sass */
 .events-page .single-event .event-details .line-top-title {
   padding-bottom: 25px;
+}
+/* line 230, ../sass/events.sass */
+.events-page .event-suggestion-form {
+  padding: 150px 50px;
+}
+/* line 232, ../sass/events.sass */
+.events-page .event-suggestion-form h2 {
+  margin-bottom: 50px;
+}
+/* line 234, ../sass/events.sass */
+.events-page .event-suggestion-form input[type="text"], .events-page .event-suggestion-form textarea {
+  border-radius: 0;
+  margin: 10px 0;
+}
+/* line 238, ../sass/events.sass */
+.events-page .event-suggestion-form .input-group-postpend {
+  margin: 10px 0;
+  border-radius: 0;
+}
+/* line 243, ../sass/events.sass */
+.events-page .event-suggestion-form .input-group-postpend .input-group-text {
+  background: #f6c103;
+  color: black;
+}
+/* line 248, ../sass/events.sass */
+.events-page .event-suggestion-form .add-file {
+  cursor: pointer;
+  color: gray;
+}
+/* line 252, ../sass/events.sass */
+.events-page .event-suggestion-form .add-file:hover {
+  color: #f6c103;
+}
+/* line 254, ../sass/events.sass */
+.events-page .event-suggestion-form .add-file input {
+  display: none;
 }
 
 /*# sourceMappingURL=events.css.map */

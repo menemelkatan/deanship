@@ -125,7 +125,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  nested-nav-link"  href="#news1">
+            <a class="nav-link  nested-nav-link"  href="#suggestEvent">
               <span>
                 اقترح فعالية
               </span>
@@ -254,6 +254,9 @@
       <!-- suggest event -->
       <section class="section" id="suggestEvent">
         <form action="" class="event-suggestion-form">
+          <h2 class="line-top-title">
+            معلومات الفعالية
+          </h2>
           <div class="row">
             <div class="col-md-6">
               <div class="input-group">
@@ -262,10 +265,10 @@
             </div>
             <div class="col-md-6">
               <div class="input-group">
+                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="الفئة المستهدفة" aria-describedby="inputGroupPrepend2" required>
                 <div class="input-group-postpend">
                   <span class="input-group-text" id="inputGroupPrepend2">+966</span>
                 </div>
-                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="الفئة المستهدفة" aria-describedby="inputGroupPrepend2" required>
               </div>
             </div>
             <div class="col-md-6">
@@ -278,8 +281,22 @@
                 <textarea class="form-control"  placeholder="وصف الفعالية"></textarea>
               </div>
             </div>
+            <div class="offset-md-6">
+            </div>
+            <div class="col-md-6">
+              <div class="form-group" align="left">
+                <label for="add-file" class="add-file">
+                  <input type="file" name="" id="add-file" value="">
+                  + ارفاق ملف
+                </label>
+              </div>
+            </div>
+            <div class="offset-md-6">
+            </div>
+            <div class="col-md-6" align="left">
+              <button type="submit" class="btn btn-link dotted-btn">تقديم الطلب</button>
+            </div>
           </div>
-          <button type="submit" class="btn btn-link dotted-btn">موافق</button>
         </form>
 
       </section>
