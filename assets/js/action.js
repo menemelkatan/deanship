@@ -119,6 +119,30 @@ $(document).ready(function() {
       });
   });
 
+	$('[data-toggle="datepicker"]').datepicker({
+	  format: 'dd-mm-yyyy',
+		inline: true,
+		container: '#dateSelector'
+	});
+
+
+
+	$(".time-slider")
+
+	    .slider({
+	        min: 0,
+	        max: 24,
+	        range: true,
+	        values: [22, 23]
+	    })
+
+	    .slider("pips", {
+	        rest: "label",
+					suffix: ':00'
+	    })
+
+	    .slider("float");
+
 
 
 

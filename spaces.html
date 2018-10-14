@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ar" dir="rtl"> <!--<![endif]-->
+  <head>
+    <title>Deanship - Spaces</title>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- mobile specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- always force latest IE rendering engine -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- bootstrap css -->
+		<link rel='stylesheet' href='assets/css/bootstrap.css'/>
+
+    <!-- datepicker css -->
+		<link rel='stylesheet' href='assets/css/datepicker.css'/>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+    <link rel='stylesheet' href='assets/css/jquery-ui-slider-pips.css'/>
+
+    <link href="assets/css/range.css" rel="stylesheet" />
+
+    <!-- Custom style CSS -->
+    <link href="assets/css/scroll.css" rel="stylesheet" />
+    <link href="assets/css/spaces.css" rel="stylesheet" />
+
+
+
+    <!--[if lt IE 9]-->
+		<script src='assets/js/html5shiv.min.js'></script>
+		<!--[endif]-->
+  </head>
+  <body>
+
+    <!-- scroll page content -->
+    <div class="deanship--content spaces-page">
+
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light deanship-navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="assets/img/header-footer/menu.png" class="deanship--icon" alt="">
+        </button>
+        <a class="navbar-brand" href="#splash"><img src="assets/img/header-footer/logo.png" class="landing-logo" alt="Deanship Logo" data-menuanchor="splash"></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto" id="landing-menu">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="assets/img/header-footer/menu.png" class="deanship--icon" alt="">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">QMA</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">منصة التعلم المرن</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">مسبار</a>
+              </div>
+            </li>
+
+            <li class="nav-item login-item">
+              <a class="nav-link " href="#!" data-toggle="modal" data-target=".login-modal">تسجيل الدخول</a>
+            </li>
+            <li class="nav-item scroll-item" data-menuanchor="about-us">
+              <a class="nav-link " href="#about-us">عن العمادة <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item scroll-item" data-menuanchor="our-services">
+              <a class="nav-link " href="#our-services">خدماتنا</a>
+            </li>
+            <li class="nav-item scroll-item" data-menuanchor="events">
+              <a class="nav-link " href="#events">الفعاليات</a>
+            </li>
+            <li class="nav-item scroll-item" data-menuanchor="contact-us">
+              <a class="nav-link " href="#contact-us">تواصل معنا</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </nav>
+      <!-- end navbar -->
+
+      <!-- right navbar -->
+      <nav class="spaces-nav">
+        <ul class="nav flex-column" id="spaces-side-menu">
+          <li class="nav-item">
+            <a class="nav-link  nested-nav-link"  href="#polices">
+              <span>
+                الشروط والأحكام
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  nested-nav-link"  href="#space">
+              <span data-toggle="collapse" data-target="#collapseReserve">
+                فضاء الإلهام
+              </span>
+            </a>
+            <ul class="nav flex-column nested-tabs collapse" id="collapseReserve">
+              <li class="nav-item nested-nav-link">
+                <a class="nav-link" href="#reserve-space">
+                  <div>
+                    احجز
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  nested-nav-link"  href="#news1">
+              <span>
+                فضاء التفاعل الرقمى
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  nested-nav-link"  href="#news1">
+              <span>
+                فضاء التمكيم
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  nested-nav-link"  href="#news1">
+              <span>
+                فضاء المخيلة
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  nested-nav-link"  href="#news1">
+              <span>
+                فضاء القرار
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  nested-nav-link"  href="#news1">
+              <span>
+                مدار mac
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  nested-nav-link"  href="#news1">
+              <span>
+                مدار windows
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  nested-nav-link"  href="#news1">
+              <span>
+                مدار الضوء
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  nested-nav-link"  href="#news1">
+              <span>
+                مسار الفكر
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- end right navbar -->
+
+
+      <!-- polices -->
+      <section class="section polices-section" id="polices">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>
+              فضاءات أنتم روادها
+            </h3>
+            <p>
+              تعد مجالات علوم الحاسب من المجالات الأكبر والأسرع نموا في العالم، وتتطلب مهنيين مؤهلين للتعامل مع الأجهزة والشبكات، وتطوير البرمجياتتعد مجالات
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h5>
+              الشروط والأحكام
+            </h5>
+            <p>
+              تعد مجالات علوم الحاسب من المجالات الأكبر والأسرع نموا في العالم، وتتطلب مهنيين مؤهلين للتعامل مع الأجهزة والشبكات، وتطوير البرمجياتتعد مجالات
+علوم الحاسب من المجالات ُتعد فكرة إنشاء عمادة التعليم الإلكتروني والتعلم عن بعد في جامعة الامام عبدالرحمن بن فيصل خطوة مهمة لمواكبة التطور
+التكنولوجي في مجال التعليم، وذلك بعدأن قطعت شوط تمح إدارة الجامعة -جامعة تقليدية توظف أساليب تدريس تقليدية، إلى جامعة عصرية تتطلع إلى
+            </p>
+            <p>
+              تعد مجالات علوم الحاسب من المجالات الأكبر والأسرع نموا في العالم، وتتطلب مهنيين مؤهلين للتعامل مع الأجهزة والشبكات، وتطوير البرمجياتتعد مجالات
+علوم الحاسب من المجالات ُتعد فكرة إنشاء عمادة التعليم الإلكتروني والتعلم عن بعد في جامعة الامام عبدالرحمن بن فيصل خطوة مهمة لمواكبة التطور
+التكنولوجي في مجال التعليم، وذلك بعدأن قطعت شوط تمح إدارة الجامعة -جامعة تقليدية توظف أساليب تدريس تقليدية، إلى جامعة عصرية تتطلع إلى
+
+            </p>
+            <p>
+              تعد مجالات علوم الحاسب من المجالات الأكبر والأسرع نموا في العالم، وتتطلب مهنيين مؤهلين للتعامل مع الأجهزة والشبكات، وتطوير البرمجياتتعد مجالات
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- end polices -->
+
+
+      <!-- single space -->
+      <section class="section single-space-section" id="space">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/img/spaces/s1.jpg" alt="">
+          </div>
+
+          <div class="col-md-6">
+            <img src="assets/img/spaces/s2.jpg" alt="">
+
+            <p>
+              تعد مجالات علوم الحاسب من المجالات الأكبر والأسرع نموا في العالم، وتتطلب مهنيين مؤهلين للتعامل مع الأجهزة والشبكات، وتطوير البرمجياتتعد مجالات
+            </p>
+
+            <h5>
+              الوسائل
+            </h5>
+
+            <p>
+              تعد مجالات علوم الحاسب من المجالات الأكبر والأسرع نموا في العالم، وتتطلب مهنيين مؤهلين للتعامل مع الأجهزة والشبكات، وتطوير البرمجياتتعد مجالات
+علوم الحاسب من المجالات ُتعد فكرة إنشاء عمادة التعليم الإلكتروني والتعلم عن بعد في جامعة الامام عبدالرحمن بن فيصل خطوة مهمة لمواكبة التطور
+            </p>
+
+            <div class="space-tags">
+              <span class="space-size">
+                <h3>
+                  20
+                </h3>
+                شخص
+              </span>
+              <span class="space-price">
+                <h3>
+                  000
+                </h3>
+                للساعة
+              </span>
+            </div>
+
+            <div align="left">
+              <a href="#!" class="btn btn-link dotted-btn">
+                حجز القاعة
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end single space -->
+
+
+
+      <!-- space reservation -->
+      <section class="section space-reservation-section" id="reserve-space">
+        <h2 class="line-top-title">
+          حجز فضاء الإلهام
+        </h2>
+        <form action="" class="space-reservation-form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="اسم المبادرة" required>
+              </div>
+              <div class="form-group row">
+                <label for="visitorsNum" class="col-sm-3 col-form-label">عدد الحضور</label>
+                <div class="col-sm-9">
+                  <input type="number" max="100" min="1" class="form-control" id="visitorsNum" required>
+                </div>
+                <div class="invalid-feedback">
+                  عدد الحضور يجب أن يكون أكبر من 0 وأقل من 100
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control"  placeholder="وصف الفعالية"></textarea>
+              </div>
+              <div class="form-group" align="left">
+                <label for="add-file" class="add-file">
+                  <input type="file" name="" id="add-file" value="">
+                  + ارفاق ملف
+                </label>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control"  placeholder="ملاحظات.."></textarea>
+              </div>
+
+              <div class="row additional-tools">
+                <div class="col-sm-12">
+                  <h4>
+                    وسائل إضافية
+                  </h4>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">حاسب محمول</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select custom-select-sm">
+                        <option selected>إختار</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">حاسب محمول</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select custom-select-sm">
+                        <option selected>إختار</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">ايباد</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select custom-select-sm">
+                        <option selected>إختار</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">ايباد</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select custom-select-sm">
+                        <option selected>إختار</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">بروجكتر</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select custom-select-sm">
+                        <option selected>إختار</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">بروجكتر</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select custom-select-sm">
+                        <option selected>إختار</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                    <label class="form-check-label" for="defaultCheck6">
+                      <b>
+                        طلب الحجز بدون مقابل مادى
+                      </b>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-6">
+
+              <div id="dateSelector">
+                <input data-toggle="datepicker">
+              </div>
+
+
+              <div class="time-slider-wrapper">
+                <div id="scale-slider" class="time-slider"></div>
+              </div>
+
+              <div align="left">
+
+                <a class="btn btn-link add-new-period-btn" href="#!" data-toggle="modal" data-target=".new-period-modal">+ إضافة فترة أخرى</a>
+
+              </div>
+
+              <div class="flex" align="left">
+                <a class="btn btn-link add-new-space-btn" href="#!" > + إضافة حجز لقاعة أخرى </a>
+                <button type="submit" class="btn btn-link dotted-btn">تأكيد الحجز</button>
+              </div>
+
+
+
+            </div>
+          </div>
+        </form>
+      </section>
+      <!-- end space reservation -->
+
+
+
+      <!-- footer -->
+      <footer class="deanship-footer">
+        <span class="copyright ">
+          Copyright © 2018 E-learning Deanship
+        </span>
+
+        <ul class="nav justify-content-end footer-contact-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img class="deanship--icon youtube" src="assets/img/header-footer/youtube.png" alt="">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img class="deanship--icon twitter" src="assets/img/header-footer/twitter.png" alt="">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img class="deanship--icon instagram" src="assets/img/header-footer/instagram.png" alt="">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">
+              <img class="deanship--icon email" src="assets/img/header-footer/email.png" alt="">
+              elearning@iau.edu.sa
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">
+              <img class="deanship--icon phone" src="assets/img/header-footer/phon.png" alt="">
+              00966834831209
+            </a>
+          </li>
+        </ul>
+      </footer>
+      <!-- end footer -->
+
+    </div>
+    <!-- end scroll page content -->
+
+    <!-- login modal -->
+    <div class="modal fade login-modal deanship-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm login-modal-dialog">
+        <div class="modal-content">
+          <form class="login-form" action="">
+            <h2 class="form-title">تسجيل الدخول</h2>
+            <div class="form-group">
+              <input type="text" class="form-control" required placeholder="إسم المستخدم">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" required placeholder="كلمة المرور">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="forgotPass">
+              <label class="form-check-label" for="forgotPass">نسيت كلمة المرور</label>
+            </div>
+            <button type="submit" class="btn btn-link">موافق</button>
+            <a type="button" href="#!" class="btn btn-link">إنشاء حساب</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end login modal -->
+
+
+    <!-- new period modal -->
+    <div class="modal fade deanship-modal new-period-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <h2 class="bottom-line-title">
+            إضافة فترة أخرى
+          </h2>
+          <p>
+            عند حجز فترة ثانية فى نفس اليوم
+            فإن جميع البيانات المدخلة فى الفترة
+            الأولى تنتقل تلقائيا إلى الثانية
+          </p>
+
+          <div class="flex">
+            <a type="button" href="#!" class="btn btn-link">موافق</a>
+            <a type="button" href="#!" class="btn btn-link">تعديل بيانات الفترة الثانية</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end new period modal -->
+
+
+    <!-- jQuery js file -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js file -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- datepicker js file -->
+    <script src="assets/js/datepicker.js"></script>
+
+    <script src="assets/js/scrolloverflow.min.js"></script>
+    <script src="assets/js/fullpage.min.js"></script>
+
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery-ui-slider-pips.js"></script>
+
+
+    <!-- custom js file -->
+    <script src="assets/js/action.js"></script>
+  </body>
+</html>

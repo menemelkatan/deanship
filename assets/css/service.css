@@ -381,307 +381,51 @@ input[type="text"], textarea, .form-control {
   font-size: 11px;
 }
 
-/* line 5, ../sass/events.sass */
+/* line 3, ../sass/service.sass */
 .deanship-footer {
   background: white;
 }
 
-/*about us page */
-/* line 9, ../sass/events.sass */
-.events-page {
+/* line 6, ../sass/service.sass */
+.service-page {
   overflow-y: scroll;
-  /*event suggestion form */
 }
-/* line 12, ../sass/events.sass */
-.events-page .deanship-navbar {
+/* line 9, ../sass/service.sass */
+.service-page .deanship-navbar {
   background: white;
 }
-/* line 16, ../sass/events.sass */
-.events-page .section {
-  padding: 100px;
-  padding-right: 250px;
+/* line 13, ../sass/service.sass */
+.service-page .service-section {
+  padding: 150px 220px;
 }
-@media(max-width: 900px) {
-  /* line 16, ../sass/events.sass */
-  .events-page .section {
-    padding: 100px 50px;
-    padding-right: 250px;
-  }
+/* line 17, ../sass/service.sass */
+.service-page .service-section .description {
+  width: 500px;
 }
-@media(max-width: 850px) {
-  /* line 16, ../sass/events.sass */
-  .events-page .section {
-    padding: 100px 10px;
-    padding-right: 200px;
-  }
-}
-@media(max-width: 650px) {
-  /* line 16, ../sass/events.sass */
-  .events-page .section {
-    padding: 100px 10px;
-    padding-top: 0;
-  }
-}
-/* line 32, ../sass/events.sass */
-.events-page .events-nav {
-  margin-top: 150px;
-  padding: 0 20px;
-  margin-right: 30px;
-  border-left: 1px solid #e5e5e5;
-  position: fixed;
-  z-index: 999;
-}
-@media(max-width: 850px) {
-  /* line 32, ../sass/events.sass */
-  .events-page .events-nav {
-    padding: 0 10px;
-    margin-right: 10px;
-  }
-}
-@media(max-width: 650px) {
-  /* line 32, ../sass/events.sass */
-  .events-page .events-nav {
-    margin-top: 80px;
-    margin-right: 0;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #e5e5e5;
-    position: relative;
-    background: white;
-  }
-}
-@media(max-width: 650px) {
-  /* line 53, ../sass/events.sass */
-  .events-page .events-nav .flex-column {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
-  }
-}
-/* line 57, ../sass/events.sass */
-.events-page .events-nav .nav {
-  z-index: 9999;
-  border: none;
-}
-@media(max-width: 650px) {
-  /* line 61, ../sass/events.sass */
-  .events-page .events-nav .nav .nav#about-side-menu {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
-}
-@media(max-width: 650px) {
-  /* line 66, ../sass/events.sass */
-  .events-page .events-nav .nav .nav-item {
-    display: inline-block;
-  }
-}
-/* line 70, ../sass/events.sass */
-.events-page .events-nav .nav a {
-  background: transparent;
-  text-align: right;
-  border-radius: 0;
-  padding: 10px;
-  position: relative;
-  color: black;
-  z-index: 2;
-  display: block;
-  border: none;
-}
-/* line 81, ../sass/events.sass */
-.events-page .events-nav .nav a span {
-  position: relative;
-}
-/* line 83, ../sass/events.sass */
-.events-page .events-nav .nav a span:before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 100%;
-  height: 6px;
-  width: 6px;
-  border-radius: 50%;
-  background: black;
-  -webkit-transition: 0.1s ease-in-out all;
-  transition: 0.1s ease-in-out all;
-}
-/* line 95, ../sass/events.sass */
-.events-page .events-nav .nav a span:after {
-  position: absolute;
-  content: "";
-  top: 58%;
-  right: 0;
-  height: 2px;
-  width: 0;
-  background: #f6c103;
-  z-index: -1;
-}
-/* line 108, ../sass/events.sass */
-.events-page .events-nav li.active span:before {
-  background: #f6c103;
-}
-/* line 111, ../sass/events.sass */
-.events-page .events-nav li.active span:after {
-  width: 110%;
-}
-/* line 116, ../sass/events.sass */
-.events-page .events-nav .nested-tabs li {
-  list-style-type: none;
-}
-/* line 118, ../sass/events.sass */
-.events-page .events-nav .nested-tabs li a {
-  font-size: 13px;
-  position: relative;
-  padding-right: 25px;
-  color: gray;
-}
-/* line 125, ../sass/events.sass */
-.events-page .events-nav .nested-tabs li a div:before {
-  position: absolute;
-  content: "";
-  top: 60%;
-  left: 95%;
-  height: 1px;
-  width: 6px;
-  border-radius: 0;
-  background: black;
-}
-/* line 136, ../sass/events.sass */
-.events-page .events-nav .nested-tabs .active div {
-  color: black;
-  font-family: LT-Bold;
-}
-/* line 143, ../sass/events.sass */
-.events-page .section .multi-events {
-  padding: 0 50px;
-}
-@media(max-width: 900px) {
-  /* line 143, ../sass/events.sass */
-  .events-page .section .multi-events {
-    padding: 0 10px;
-  }
-}
-/* line 149, ../sass/events.sass */
-.events-page .section .multi-events .nested-stories {
-  border: none;
-}
-/* line 152, ../sass/events.sass */
-.events-page .section .multi-events .event {
-  padding: 10px;
-}
-/* line 154, ../sass/events.sass */
-.events-page .section .multi-events .event a {
-  border: none;
-  color: black;
-  -webkit-transition: 0.2s ease-in all;
-  transition: 0.2s ease-in all;
-}
-/* line 158, ../sass/events.sass */
-.events-page .section .multi-events .event a:hover {
-  opacity: 0.5;
-}
-/* line 161, ../sass/events.sass */
-.events-page .section .multi-events .event a:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-/* line 163, ../sass/events.sass */
-.events-page .section .multi-events .event .event-thumbnail {
-  width: 100%;
-}
-/* line 169, ../sass/events.sass */
-.events-page .single-event .event-slider {
-  width: 80%;
-  margin-right: 50px;
-  position: relative;
-}
-@media(max-width: 1000px) {
-  /* line 169, ../sass/events.sass */
-  .events-page .single-event .event-slider {
-    width: 100%;
-    margin-right: 20px;
-  }
-}
-@media(max-width: 650px) {
-  /* line 169, ../sass/events.sass */
-  .events-page .single-event .event-slider {
-    margin-right: 0;
-  }
-}
-/* line 182, ../sass/events.sass */
-.events-page .single-event .event-slider .carousel-indicators {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: auto;
-  left: 101.9%;
-  margin: 0;
-  right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-/* line 194, ../sass/events.sass */
-.events-page .single-event .event-slider .carousel-indicators:after, .events-page .single-event .event-slider .carousel-indicators:before {
-  content: "";
-  height: 25%;
-  width: 2px;
-  background: #e5e5e5;
-}
-/* line 199, ../sass/events.sass */
-.events-page .single-event .event-slider .carousel-indicators li {
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  border: 1px solid #e5e5e5;
-  cursor: pointer;
-}
-/* line 206, ../sass/events.sass */
-.events-page .single-event .event-slider .carousel-indicators li.active {
-  background: #f6c103;
-  border-color: #f6c103;
-}
-/* line 210, ../sass/events.sass */
-.events-page .single-event .event-details {
-  width: 80%;
-  margin-top: 50px;
-  margin-right: 50px;
-}
-@media(max-width: 1000px) {
-  /* line 210, ../sass/events.sass */
-  .events-page .single-event .event-details {
-    width: 100%;
-    margin-right: 20px;
-  }
-}
-@media(max-width: 650px) {
-  /* line 210, ../sass/events.sass */
-  .events-page .single-event .event-details {
-    margin-right: 0;
-  }
-}
-/* line 221, ../sass/events.sass */
-.events-page .single-event .event-details p {
+/* line 20, ../sass/service.sass */
+.service-page .service-section .description p {
   color: #808080;
 }
-/* line 224, ../sass/events.sass */
-.events-page .single-event .event-details .line-top-title {
-  padding-bottom: 25px;
+/* line 24, ../sass/service.sass */
+.service-page .service-form {
+  margin-top: 50px;
 }
-/* line 230, ../sass/events.sass */
-.events-page .event-suggestion-form {
-  padding: 150px 50px;
+/* line 27, ../sass/service.sass */
+.service-page .service-form .row {
+  margin-bottom: 20px;
 }
-/* line 232, ../sass/events.sass */
-.events-page .event-suggestion-form h2 {
-  margin-bottom: 50px;
+/* line 30, ../sass/service.sass */
+.service-page .service-form .form-check {
+  color: #808080;
+  font-size: 18px;
+}
+/* line 34, ../sass/service.sass */
+.service-page .service-form input {
+  height: 50px;
+}
+/* line 38, ../sass/service.sass */
+.service-page .service-form .input-group-postpend .input-group-text {
+  height: 50px;
 }
 
-/*# sourceMappingURL=events.css.map */
+/*# sourceMappingURL=service.css.map */
