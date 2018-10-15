@@ -127,6 +127,7 @@ $(document).ready(function() {
 
 
 
+	//time slider
 	$(".time-slider")
 
 	    .slider({
@@ -140,12 +141,29 @@ $(document).ready(function() {
 	        rest: "label",
 					suffix: ':00'
 	    })
-
 	    .slider("float");
 
+	//show space reservation section
+	$('.reserve-space-btn, .new-space-btn').on('click', function(){
+		$('.space-reservation-section').css('display', 'block')
+	});
+	//add new period to the reservation
+	$('.confirm-new-period').on('click', function(){
+		$('<div class="row space-reservation-form-content new"></div>').insertAfter('.space-reservation-form-content').last().html($('.space-reservation-form-content').eq(0).html());
+	});
 
+	//show other spaces section
+	$('.add-new-space-btn').on('click', function(){
+		$('.other-spaces-section').css('display', 'block');
+	});
 
-
+	//reserve other spaces section
+	$('.new-space-btn').each(function(i){
+		$('.new-space-btn').eq(i).on('click', function(){
+			$('.other-spaces-section').css('display', 'none');
+			$('<div class="row space-reservation-form-content new"></div>').insertAfter('.space-reservation-form-content').last().html($('.space-reservation-form-content').eq(0).html()).prepend('<div class="col-12"><h2 class="line-top-title">'+$('.new-space-btn').eq(i).children('.another-single-space-details').children('.line-top-title').html()+'</h2></div>');
+		});
+	})
 
 
 });

@@ -338,6 +338,7 @@ input[type="text"], select, textarea, .form-control, .custom-select
       width: 450px
       border-radius: 0
       padding: 50px
+      position: relative
 
       input.form-control
         border-radius: 0
@@ -362,5 +363,18 @@ input[type="text"], select, textarea, .form-control, .custom-select
         text-decoration: none
         background: transparent
         border: none
+        &:hover
+          color: $yellow
+
+
+      .close-modal
+        position: absolute
+        top: 10px
+        left: 10px
+        font-size: 20px
+        cursor: pointer
+        background: transparent !important
+        border: none !important
+        outline: none
         &:hover
           color: $yellow

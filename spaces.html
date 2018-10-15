@@ -101,7 +101,7 @@
             </a>
             <ul class="nav flex-column nested-tabs collapse" id="collapseReserve">
               <li class="nav-item nested-nav-link">
-                <a class="nav-link" href="#reserve-space">
+                <a class="nav-link reserve-space-btn" href="#reserve-space">
                   <div>
                     احجز
                   </div>
@@ -173,7 +173,7 @@
       <!-- polices -->
       <section class="section polices-section" id="polices">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-8">
             <h3>
               فضاءات أنتم روادها
             </h3>
@@ -181,7 +181,7 @@
               تعد مجالات علوم الحاسب من المجالات الأكبر والأسرع نموا في العالم، وتتطلب مهنيين مؤهلين للتعامل مع الأجهزة والشبكات، وتطوير البرمجياتتعد مجالات
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <h5>
               الشروط والأحكام
             </h5>
@@ -209,10 +209,45 @@
       <section class="section single-space-section" id="space">
         <div class="row">
           <div class="col-md-6">
-            <img src="assets/img/spaces/s1.jpg" alt="">
+            <!-- space image slider -->
+            <div id="spaceSlider1" class="carousel slide space-slider" data-ride="carousel">
+              <ol class="carousel-indicators mini-indicators">
+                <li data-target="#spaceSlider1" class="active" data-slide-to="0"></li>
+                <li data-target="#spaceSlider1" data-slide-to="1"></li>
+                <li data-target="#spaceSlider1" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block" src="assets/img/spaces/e1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block" src="assets/img/spaces/e2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block" src="assets/img/spaces/e1.jpg" alt="Third slide">
+                </div>
+              </div>
+
+              <ol class="thumbnails-indicators">
+                <li data-target="#spaceSlider1" class="active" data-slide-to="0">
+                  <img class="d-block" src="assets/img/spaces/e1.jpg" alt="First slide">
+                </li>
+                <li data-target="#spaceSlider1" data-slide-to="1">
+                  <img class="d-block" src="assets/img/spaces/e2.jpg" alt="First slide">
+                </li>
+                <li data-target="#spaceSlider1" data-slide-to="2">
+                  <img class="d-block" src="assets/img/spaces/e1.jpg" alt="First slide">
+                </li>
+              </ol>
+
+            </div>
+            <!-- end space image slider -->
           </div>
 
           <div class="col-md-6">
+            <h3 class="line-top-title">
+              فضاء الإلهام
+            </h3>
             <img src="assets/img/spaces/s2.jpg" alt="">
 
             <p>
@@ -244,7 +279,7 @@
             </div>
 
             <div align="left">
-              <a href="#!" class="btn btn-link dotted-btn">
+              <a href="#reserve-space" class="btn btn-link dotted-btn reserve-space-btn">
                 حجز القاعة
               </a>
             </div>
@@ -255,14 +290,17 @@
 
 
 
-      <!-- space reservation -->
+      <!-- space reservation section -->
       <section class="section space-reservation-section" id="reserve-space">
         <h2 class="line-top-title">
           حجز فضاء الإلهام
         </h2>
         <form action="" class="space-reservation-form">
-          <div class="row">
+          <div class="row space-reservation-form-content">
             <div class="col-md-6">
+              <p class="bottom-line-title resreved-time">
+                8:00 - 10:00 صباحا
+              </p>
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="اسم المبادرة" required>
               </div>
@@ -403,20 +441,250 @@
 
               <div align="left">
 
-                <a class="btn btn-link add-new-period-btn" href="#!" data-toggle="modal" data-target=".new-period-modal">+ إضافة فترة أخرى</a>
+                <a class="btn btn-link add-new-period-btn" data-toggle="modal" data-target=".new-period-modal">+ إضافة فترة أخرى</a>
 
               </div>
 
 
             </div>
+          </div>
+          <div class="row">
             <div class="flex col-md-12" align="left">
-              <a class="btn btn-link add-new-space-btn" href="#!" > + إضافة حجز لقاعة أخرى </a>
+              <a class="btn btn-link add-new-space-btn" href="#otherSpaces"> + إضافة حجز لقاعة أخرى </a>
               <button type="submit" class="btn btn-link dotted-btn">تأكيد الحجز</button>
             </div>
           </div>
         </form>
       </section>
-      <!-- end space reservation -->
+      <!-- end space reservation section -->
+
+      <!-- other spaces section -->
+      <section class="section other-spaces-section" id="otherSpaces">
+        <div class="row other-spaces-list">
+
+          <!-- single space -->
+          <div class="another-single-space col-md-6">
+            <a href="#reserve-space" class="new-space-btn">
+              <img class="another-single-space-thumbnail" src="assets/img/spaces/ee1.jpg" alt="">
+              <div class="another-single-space-details">
+                <h4 class="line-top-title">فضاء الإلهام</h4>
+                <p>
+                  <span class="space-capacity">
+                    90
+                    شخص
+                  </span>
+                  |
+                  <span class="space-price">
+                    100
+                    ريال للساعة
+                  </span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- end single space -->
+
+          <!-- single space -->
+          <div class="another-single-space col-md-6">
+            <a class="new-space-btn" href="#reserve-space">
+              <img class="another-single-space-thumbnail" src="assets/img/spaces/ee2.jpg" alt="">
+              <div class="another-single-space-details">
+                <h4 class="line-top-title">مدار الإلهام</h4>
+                <p>
+                  <span class="space-capacity">
+                    90
+                    شخص
+                  </span>
+                  |
+                  <span class="space-price">
+                    100
+                    ريال للساعة
+                  </span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- end single space -->
+
+          <!-- single space -->
+          <div class="another-single-space col-md-6">
+            <a class="new-space-btn" href="#reserve-space">
+              <img class="another-single-space-thumbnail" src="assets/img/spaces/ee3.jpg" alt="">
+              <div class="another-single-space-details">
+                <h4 class="line-top-title">فضاء المخيلية</h4>
+                <p>
+                  <span class="space-capacity">
+                    90
+                    شخص
+                  </span>
+                  |
+                  <span class="space-price">
+                    100
+                    ريال للساعة
+                  </span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- end single space -->
+
+          <!-- single space -->
+          <div class="another-single-space col-md-6">
+            <a class="new-space-btn" href="#reserve-space">
+              <img class="another-single-space-thumbnail" src="assets/img/spaces/ee4.jpg" alt="">
+              <div class="another-single-space-details">
+                <h4 class="line-top-title">مدار Mac</h4>
+                <p>
+                  <span class="space-capacity">
+                    90
+                    شخص
+                  </span>
+                  |
+                  <span class="space-price">
+                    100
+                    ريال للساعة
+                  </span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- end single space -->
+
+          <!-- single space -->
+          <div class="another-single-space col-md-6">
+            <a class="new-space-btn" href="#reserve-space">
+              <img class="another-single-space-thumbnail" src="assets/img/spaces/ee5.jpg" alt="">
+              <div class="another-single-space-details">
+                <h4 class="line-top-title">فضاء التفاعل
+  الرقمي</h4>
+                <p>
+                  <span class="space-capacity">
+                    90
+                    شخص
+                  </span>
+                  |
+                  <span class="space-price">
+                    100
+                    ريال للساعة
+                  </span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- end single space -->
+
+          <!-- single space -->
+          <div class="another-single-space col-md-6">
+            <a class="new-space-btn" href="#reserve-space">
+              <img class="another-single-space-thumbnail" src="assets/img/spaces/ee6.jpg" alt="">
+              <div class="another-single-space-details">
+                <h4 class="line-top-title">مدار Windows</h4>
+                <p>
+                  <span class="space-capacity">
+                    90
+                    شخص
+                  </span>
+                  |
+                  <span class="space-price">
+                    100
+                    ريال للساعة
+                  </span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- end single space -->
+
+          <!-- single space -->
+          <div class="another-single-space col-md-6">
+            <a class="new-space-btn" href="#reserve-space">
+              <img class="another-single-space-thumbnail" src="assets/img/spaces/ee7.jpg" alt="">
+              <div class="another-single-space-details">
+                <h4 class="line-top-title">فضاء التمكين</h4>
+                <p>
+                  <span class="space-capacity">
+                    90
+                    شخص
+                  </span>
+                  |
+                  <span class="space-price">
+                    100
+                    ريال للساعة
+                  </span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- end single space -->
+
+          <!-- single space -->
+          <div class="another-single-space col-md-6">
+            <a class="new-space-btn" href="#reserve-space">
+              <img class="another-single-space-thumbnail" src="assets/img/spaces/ee8.jpg" alt="">
+              <div class="another-single-space-details">
+                <h4 class="line-top-title">مدار الضوء</h4>
+                <p>
+                  <span class="space-capacity">
+                    90
+                    شخص
+                  </span>
+                  |
+                  <span class="space-price">
+                    100
+                    ريال للساعة
+                  </span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- end single space -->
+
+          <!-- single space -->
+          <div class="another-single-space col-md-6">
+            <a class="new-space-btn" href="#reserve-space">
+              <img class="another-single-space-thumbnail" src="assets/img/spaces/ee9.jpg" alt="">
+              <div class="another-single-space-details">
+                <h4 class="line-top-title">فضاء القرار</h4>
+                <p>
+                  <span class="space-capacity">
+                    90
+                    شخص
+                  </span>
+                  |
+                  <span class="space-price">
+                    100
+                    ريال للساعة
+                  </span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- end single space -->
+
+          <!-- single space -->
+          <div class="another-single-space col-md-6">
+            <a class="new-space-btn" href="#reserve-space">
+              <img class="another-single-space-thumbnail" src="assets/img/spaces/ee10.jpg" alt="">
+              <div class="another-single-space-details">
+                <h4 class="line-top-title">مسار الفكر</h4>
+                <p>
+                  <span class="space-capacity">
+                    90
+                    شخص
+                  </span>
+                  |
+                  <span class="space-price">
+                    100
+                    ريال للساعة
+                  </span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- end single space -->
+        </div>
+      </section>
+      <!-- end other spaces section -->
 
 
 
@@ -480,6 +748,10 @@
             <button type="submit" class="btn btn-link">موافق</button>
             <a type="button" href="#!" class="btn btn-link">إنشاء حساب</a>
           </form>
+
+          <button class="close-modal" data-dismiss="modal" aria-label="Close">
+            x
+          </button>
         </div>
       </div>
     </div>
@@ -500,9 +772,13 @@
           </p>
 
           <div class="flex">
-            <a type="button" href="#!" class="btn btn-link">موافق</a>
-            <a type="button" href="#!" class="btn btn-link">تعديل بيانات الفترة الثانية</a>
+            <a type="button" data-dismiss="modal" aria-label="Close" class="btn btn-link confirm-new-period">موافق</a>
+            <a type="button" data-dismiss="modal" aria-label="Close" class="btn btn-link confirm-new-period">تعديل بيانات الفترة الثانية</a>
           </div>
+
+          <button class="close-modal" data-dismiss="modal" aria-label="Close">
+            x
+          </button>
         </div>
       </div>
     </div>
