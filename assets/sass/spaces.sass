@@ -248,6 +248,8 @@
   /*space reservation*/
   .space-reservation-section
     display: none
+    .space-reservation-form-content
+      position: relative
     .space-reservation-form
       margin-top: 50px
       .input-group
@@ -279,7 +281,7 @@
 
         .custom-select
           background: #fff url('../img/drop-down.png') no-repeat left -0.25rem center
-          background-size: auto
+          background-size: contain
 
         .custom-select-sm
           padding-top: 0
@@ -327,6 +329,28 @@
       border-radius: 0
       margin-left: 10px
 
+
+    .cancel-reservation-btn
+      position: absolute
+      top: 0
+      left: 0
+      height: 30px
+      width: 30px
+      background: black
+      color: white
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      padding: 0
+      margin: 0
+      font-size: 15px
+      cursor: pointer
+      border: 1px solid black
+
+      &:hover
+        background: transparent
+        color: black
 
 
   /*other spaces*/

@@ -38,3 +38,9 @@
 .ui-slider-tip{
   display: none !important
 }
+.ui-slider-label{
+  color: black !important;
+}
+.ui-slider-pip-selected-2>.ui-slider-label, .ui-slider-pip-selected-1>.ui-slider-label{
+  color: orange !important;
+}

@@ -195,16 +195,24 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   cursor: pointer;
   color: gray;
 }
-/* line 158, ../sass/_public.sass */
+/* line 159, ../sass/_public.sass */
 .add-file:hover {
   color: #f6c103;
 }
-/* line 160, ../sass/_public.sass */
+/* line 161, ../sass/_public.sass */
 .add-file input {
   display: none;
 }
 
-/* line 164, ../sass/_public.sass */
+/* line 165, ../sass/_public.sass */
+.custom-select {
+  background: #fff url("../img/drop-down.png") no-repeat left -0.25rem center;
+  background-size: contain;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 172, ../sass/_public.sass */
 .deanship--content {
   position: fixed;
   top: 0;
@@ -214,7 +222,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
 }
 
 /*deanship navbar */
-/* line 172, ../sass/_public.sass */
+/* line 180, ../sass/_public.sass */
 .deanship-navbar {
   background-color: transparent;
   position: fixed;
@@ -222,7 +230,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   padding: 30px 20px;
   z-index: 9999;
 }
-/* line 179, ../sass/_public.sass */
+/* line 187, ../sass/_public.sass */
 .deanship-navbar .navbar-brand {
   position: fixed;
   top: 20px;
@@ -230,24 +238,24 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   display: block !important;
 }
 @media(max-width: 992px) {
-  /* line 185, ../sass/_public.sass */
+  /* line 193, ../sass/_public.sass */
   .deanship-navbar .navbar-nav {
     background: #808080;
     margin-top: 50px;
   }
 }
-/* line 190, ../sass/_public.sass */
+/* line 198, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) {
   margin: 0 40px;
   position: relative;
 }
 @media(max-width: 1100px) {
-  /* line 190, ../sass/_public.sass */
+  /* line 198, ../sass/_public.sass */
   .deanship-navbar .navbar-nav .nav-item:not(.dropdown) {
     margin: 0 20px;
   }
 }
-/* line 195, ../sass/_public.sass */
+/* line 203, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a {
   color: black;
   font-size: 12px;
@@ -255,7 +263,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   z-index: 2;
   display: block;
 }
-/* line 202, ../sass/_public.sass */
+/* line 210, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:after {
   position: absolute;
   content: "";
@@ -270,7 +278,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   -webkit-transition: 0.1s ease-in-out all;
   transition: 0.1s ease-in-out all;
 }
-/* line 214, ../sass/_public.sass */
+/* line 222, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:before {
   position: absolute;
   content: "";
@@ -284,25 +292,25 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   -webkit-transition: 0.1s ease-in-out all;
   transition: 0.1s ease-in-out all;
 }
-/* line 226, ../sass/_public.sass */
+/* line 234, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:hover:after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-/* line 229, ../sass/_public.sass */
+/* line 237, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:hover:before {
   width: 85%;
 }
-/* line 234, ../sass/_public.sass */
+/* line 242, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item.active:not(.dropdown) a:after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-/* line 237, ../sass/_public.sass */
+/* line 245, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item.active:not(.dropdown) a:before {
   width: 85%;
 }
-/* line 241, ../sass/_public.sass */
+/* line 249, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item.scroll-item:not(:first-of-type):after {
   position: absolute;
   content: "";
@@ -314,50 +322,50 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   left: 150%;
 }
 @media(max-width: 1100px) {
-  /* line 241, ../sass/_public.sass */
+  /* line 249, ../sass/_public.sass */
   .deanship-navbar .navbar-nav .nav-item.scroll-item:not(:first-of-type):after {
     left: 130%;
   }
 }
 @media(max-width: 992px) {
-  /* line 254, ../sass/_public.sass */
+  /* line 262, ../sass/_public.sass */
   .deanship-navbar .navbar-nav .dropdown {
     margin: 0 15px;
     -webkit-filter: invert(1);
             filter: invert(1);
   }
 }
-/* line 258, ../sass/_public.sass */
+/* line 266, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown a:after {
   opacity: 0;
 }
-/* line 261, ../sass/_public.sass */
+/* line 269, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu {
   background: #23454c;
   padding: 0;
 }
-/* line 264, ../sass/_public.sass */
+/* line 272, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu a {
   color: white;
   font-size: 12px;
   padding: 5px 10px;
 }
-/* line 269, ../sass/_public.sass */
+/* line 277, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu a:hover {
   color: #23454c;
 }
-/* line 272, ../sass/_public.sass */
+/* line 280, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu .dropdown-divider {
   margin: 0;
 }
-/* line 276, ../sass/_public.sass */
+/* line 284, ../sass/_public.sass */
 .deanship-navbar .navbar-toggler {
   border: none;
   outline: none;
 }
 
 /*deanship-footer */
-/* line 283, ../sass/_public.sass */
+/* line 291, ../sass/_public.sass */
 .deanship-footer {
   position: fixed;
   bottom: 0;
@@ -372,7 +380,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   padding: 30px;
 }
 @media(max-width: 720px) {
-  /* line 283, ../sass/_public.sass */
+  /* line 291, ../sass/_public.sass */
   .deanship-footer {
     padding: 10px;
     -ms-flex-wrap: wrap;
@@ -385,24 +393,24 @@ input[type="text"], select, textarea, .form-control, .custom-select {
             justify-content: center;
   }
 }
-/* line 298, ../sass/_public.sass */
+/* line 306, ../sass/_public.sass */
 .deanship-footer a {
   color: black;
   font-size: 11px;
   padding: 5px;
 }
-/* line 303, ../sass/_public.sass */
+/* line 311, ../sass/_public.sass */
 .deanship-footer a .deanship--icon {
   margin-left: 10px;
 }
 @media(max-width: 720px) {
-  /* line 303, ../sass/_public.sass */
+  /* line 311, ../sass/_public.sass */
   .deanship-footer a .deanship--icon {
     margin-left: 3px;
   }
 }
 @media(max-width: 720px) {
-  /* line 309, ../sass/_public.sass */
+  /* line 317, ../sass/_public.sass */
   .deanship-footer .footer-contact-nav {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -414,18 +422,18 @@ input[type="text"], select, textarea, .form-control, .custom-select {
             justify-content: center;
   }
 }
-/* line 314, ../sass/_public.sass */
+/* line 322, ../sass/_public.sass */
 .deanship-footer .footer-contact-nav .nav-item {
   margin: 0 5px;
 }
-/* line 317, ../sass/_public.sass */
+/* line 325, ../sass/_public.sass */
 .deanship-footer .copyright {
   color: black;
   font-size: 11px;
 }
 
 /*deanship-modal */
-/* line 327, ../sass/_public.sass */
+/* line 335, ../sass/_public.sass */
 .deanship-modal .modal-dialog {
   width: 100%;
   max-width: none;
@@ -442,21 +450,21 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   margin: 0;
   overflow: hidden;
 }
-/* line 337, ../sass/_public.sass */
+/* line 345, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content {
   width: 450px;
   border-radius: 0;
   padding: 50px;
   position: relative;
 }
-/* line 343, ../sass/_public.sass */
+/* line 351, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content input.form-control {
   border-radius: 0;
   border-color: #e5e5e5;
   padding: 10px;
   font-size: 18px;
 }
-/* line 349, ../sass/_public.sass */
+/* line 357, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content .form-check {
   color: gray;
   margin-bottom: 50px;
@@ -468,7 +476,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 357, ../sass/_public.sass */
+/* line 365, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content .btn {
   padding: 0;
   margin-left: 20px;
@@ -479,11 +487,11 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   background: transparent;
   border: none;
 }
-/* line 366, ../sass/_public.sass */
+/* line 374, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content .btn:hover {
   color: #f6c103;
 }
-/* line 370, ../sass/_public.sass */
+/* line 378, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content .close-modal {
   position: absolute;
   top: 10px;
@@ -494,7 +502,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   border: none !important;
   outline: none;
 }
-/* line 379, ../sass/_public.sass */
+/* line 387, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content .close-modal:hover {
   color: #f6c103;
 }
@@ -825,38 +833,42 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   display: none;
 }
 /* line 251, ../sass/spaces.sass */
+.spaces-page .space-reservation-section .space-reservation-form-content {
+  position: relative;
+}
+/* line 253, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .space-reservation-form {
   margin-top: 50px;
 }
-/* line 253, ../sass/spaces.sass */
+/* line 255, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .space-reservation-form .input-group {
   margin-bottom: 20px;
 }
-/* line 256, ../sass/spaces.sass */
+/* line 258, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .space-reservation-form input {
   height: 40px;
 }
-/* line 259, ../sass/spaces.sass */
+/* line 261, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .space-reservation-form textarea {
   height: 150px;
 }
-/* line 263, ../sass/spaces.sass */
+/* line 265, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .space-reservation-form .additional-tools {
   margin-top: 50px;
   padding-top: 40px;
   border-top: 1px #e5e5e5 dashed;
   margin-bottom: 100px;
 }
-/* line 269, ../sass/spaces.sass */
+/* line 271, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .space-reservation-form .additional-tools h4 {
   margin-bottom: 40px;
 }
-/* line 272, ../sass/spaces.sass */
+/* line 274, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .space-reservation-form .additional-tools label {
   font-size: 12px;
   padding: 0;
 }
-/* line 276, ../sass/spaces.sass */
+/* line 278, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .space-reservation-form .additional-tools .form-group.row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -865,52 +877,52 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 280, ../sass/spaces.sass */
+/* line 282, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .space-reservation-form .additional-tools .custom-select {
   background: #fff url("../img/drop-down.png") no-repeat left -0.25rem center;
-  background-size: auto;
+  background-size: contain;
 }
-/* line 284, ../sass/spaces.sass */
+/* line 286, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .space-reservation-form .additional-tools .custom-select-sm {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 290, ../sass/spaces.sass */
+/* line 292, ../sass/spaces.sass */
 .spaces-page .space-reservation-section #dateSelector .datepicker-inline {
   -webkit-transform: scale(1.6);
           transform: scale(1.6);
   margin: 60px auto;
   font-size: 8px;
 }
-/* line 295, ../sass/spaces.sass */
+/* line 297, ../sass/spaces.sass */
 .spaces-page .space-reservation-section #dateSelector .datepicker-container {
   z-index: 100;
 }
-/* line 297, ../sass/spaces.sass */
+/* line 299, ../sass/spaces.sass */
 .spaces-page .space-reservation-section #dateSelector input {
   display: none;
 }
-/* line 302, ../sass/spaces.sass */
+/* line 304, ../sass/spaces.sass */
 .spaces-page .space-reservation-section #dateSelector .datepicker-panel ul li[data-view="day"] {
   background: #e5e5e5;
 }
-/* line 307, ../sass/spaces.sass */
+/* line 309, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .time-slider-wrapper {
   overflow-x: scroll;
   padding: 20px;
   height: 100px;
   margin-top: 100px;
 }
-/* line 312, ../sass/spaces.sass */
+/* line 314, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .time-slider-wrapper .time-slider {
   width: 1800px;
 }
-/* line 318, ../sass/spaces.sass */
+/* line 320, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .add-new-period-btn {
   color: #808080;
   margin: 25px 0;
 }
-/* line 323, ../sass/spaces.sass */
+/* line 325, ../sass/spaces.sass */
 .spaces-page .space-reservation-section .add-new-space-btn {
   color: #808080;
   padding-left: 10px;
@@ -919,14 +931,44 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   margin-left: 10px;
 }
 /* line 333, ../sass/spaces.sass */
+.spaces-page .space-reservation-section .cancel-reservation-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+/* line 351, ../sass/spaces.sass */
+.spaces-page .space-reservation-section .cancel-reservation-btn:hover {
+  background: transparent;
+  color: black;
+}
+/* line 357, ../sass/spaces.sass */
 .spaces-page .other-spaces-section {
   display: none;
 }
-/* line 335, ../sass/spaces.sass */
+/* line 359, ../sass/spaces.sass */
 .spaces-page .other-spaces-section .another-single-space {
   margin: 20px 0;
 }
-/* line 338, ../sass/spaces.sass */
+/* line 362, ../sass/spaces.sass */
 .spaces-page .other-spaces-section .another-single-space a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -940,19 +982,18 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   color: black;
   padding: 20px;
 }
-/* line 345, ../sass/spaces.sass */
+/* line 369, ../sass/spaces.sass */
 .spaces-page .other-spaces-section .another-single-space a:hover {
   background: #e5e5e5;
 }
-/* line 348, ../sass/spaces.sass */
+/* line 372, ../sass/spaces.sass */
 .spaces-page .other-spaces-section .another-single-space a .another-single-space-thumbnail {
   height: 120px;
   margin-left: 30px;
 }
-/* line 354, ../sass/spaces.sass */
+/* line 378, ../sass/spaces.sass */
 .spaces-page .other-spaces-section .another-single-space a .another-single-space-details p {
   color: #808080;
   margin-bottom: 0;
 }
-
 /*# sourceMappingURL=spaces.css.map */

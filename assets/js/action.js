@@ -100,7 +100,7 @@ $(document).ready(function() {
 
 
 	//smoothscroll
-  $('a[href^="#"]').on('click', function (e) {
+  $('.deanship-right-nav a[href^="#"]').on('click', function (e) {
       e.preventDefault();
       $(document).off("scroll");
 
@@ -119,6 +119,7 @@ $(document).ready(function() {
       });
   });
 
+	//datepicker
 	$('[data-toggle="datepicker"]').datepicker({
 	  format: 'dd-mm-yyyy',
 		inline: true,
@@ -147,9 +148,16 @@ $(document).ready(function() {
 	$('.reserve-space-btn, .new-space-btn').on('click', function(){
 		$('.space-reservation-section').css('display', 'block')
 	});
+
 	//add new period to the reservation
 	$('.confirm-new-period').on('click', function(){
-		$('<div class="row space-reservation-form-content new"></div>').insertAfter('.space-reservation-form-content').last().html($('.space-reservation-form-content').eq(0).html());
+		$('<div class="row space-reservation-form-content new"></div>').insertAfter('.space-reservation-form-content').last().html($('.space-reservation-form-content').eq(0).html()+'<span class="cancel-reservation-btn">X</span>');
+		//cancel the new period/room button
+		$('.cancel-reservation-btn').each(function(i){
+			$('.cancel-reservation-btn').eq(i).on('click', function(){
+				$(this).parent().remove();
+			});
+		});
 	});
 
 	//show other spaces section
@@ -161,9 +169,24 @@ $(document).ready(function() {
 	$('.new-space-btn').each(function(i){
 		$('.new-space-btn').eq(i).on('click', function(){
 			$('.other-spaces-section').css('display', 'none');
-			$('<div class="row space-reservation-form-content new"></div>').insertAfter('.space-reservation-form-content').last().html($('.space-reservation-form-content').eq(0).html()).prepend('<div class="col-12"><h2 class="line-top-title">'+$('.new-space-btn').eq(i).children('.another-single-space-details').children('.line-top-title').html()+'</h2></div>');
-		});
-	})
+			$('<div class="row space-reservation-form-content new"></div>').insertAfter('.space-reservation-form-content').last().html($('.space-reservation-form-content').eq(0).html()+'<span class="cancel-reservation-btn">X</span>').prepend('<div class="col-12"><h2 class="line-top-title">'+$('.new-space-btn').eq(i).children('.another-single-space-details').children('.line-top-title').html()+'</h2></div>');
 
+			$('.cancel-reservation-btn').each(function(o){
+				$('.cancel-reservation-btn').eq(o).on('click', function(){
+					$(this).parent().remove();
+				});
+			});
+		});
+	});
+
+
+	//show file uploader indicator
+	$('.add-file input').on('change', function(){
+		if($(this).val().length > 0)
+			$(this).css('display', 'block')
+
+		else
+			$(this).css('display', 'none')
+	});
 
 });

@@ -84,7 +84,7 @@
       <!-- end navbar -->
 
       <!-- right navbar -->
-      <nav class="spaces-nav">
+      <nav class="spaces-nav deanship-right-nav">
         <ul class="nav flex-column" id="spaces-side-menu">
           <li class="nav-item">
             <a class="nav-link  nested-nav-link"  href="#polices">
@@ -307,7 +307,12 @@
               <div class="form-group row">
                 <label for="visitorsNum" class="col-sm-3 col-form-label">عدد الحضور</label>
                 <div class="col-sm-9">
-                  <input type="number" max="100" min="1" class="form-control" id="visitorsNum" required>
+                  <select class="custom-select">
+                    <option selected>إختار</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
                 </div>
                 <div class="invalid-feedback">
                   عدد الحضور يجب أن يكون أكبر من 0 وأقل من 100
