@@ -119,6 +119,12 @@ $(document).ready(function() {
       });
   });
 
+	//show change password form
+	$('.change-password-btn').on('click', function(){
+		$('.password-settings').css('display', 'none');
+		$('.change-password').css('display', 'block');
+	})
+
 	//datepicker
 	$('[data-toggle="datepicker"]').datepicker({
 	  format: 'dd-mm-yyyy',
@@ -188,5 +194,7 @@ $(document).ready(function() {
 		else
 			$(this).css('display', 'none')
 	});
+
+
 
 });

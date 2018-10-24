@@ -195,16 +195,24 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   cursor: pointer;
   color: gray;
 }
-/* line 158, ../sass/_public.sass */
+/* line 159, ../sass/_public.sass */
 .add-file:hover {
   color: #f6c103;
 }
-/* line 160, ../sass/_public.sass */
+/* line 161, ../sass/_public.sass */
 .add-file input {
   display: none;
 }
 
-/* line 164, ../sass/_public.sass */
+/* line 165, ../sass/_public.sass */
+.custom-select {
+  background: #fff url("../img/drop-down.png") no-repeat left -0.25rem center;
+  background-size: contain;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 172, ../sass/_public.sass */
 .deanship--content {
   position: fixed;
   top: 0;
@@ -214,7 +222,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
 }
 
 /*deanship navbar */
-/* line 172, ../sass/_public.sass */
+/* line 180, ../sass/_public.sass */
 .deanship-navbar {
   background-color: transparent;
   position: fixed;
@@ -222,7 +230,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   padding: 30px 20px;
   z-index: 9999;
 }
-/* line 179, ../sass/_public.sass */
+/* line 187, ../sass/_public.sass */
 .deanship-navbar .navbar-brand {
   position: fixed;
   top: 20px;
@@ -230,24 +238,24 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   display: block !important;
 }
 @media(max-width: 992px) {
-  /* line 185, ../sass/_public.sass */
+  /* line 193, ../sass/_public.sass */
   .deanship-navbar .navbar-nav {
     background: #808080;
     margin-top: 50px;
   }
 }
-/* line 190, ../sass/_public.sass */
+/* line 198, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) {
   margin: 0 40px;
   position: relative;
 }
 @media(max-width: 1100px) {
-  /* line 190, ../sass/_public.sass */
+  /* line 198, ../sass/_public.sass */
   .deanship-navbar .navbar-nav .nav-item:not(.dropdown) {
     margin: 0 20px;
   }
 }
-/* line 195, ../sass/_public.sass */
+/* line 203, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a {
   color: black;
   font-size: 12px;
@@ -255,7 +263,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   z-index: 2;
   display: block;
 }
-/* line 202, ../sass/_public.sass */
+/* line 210, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:after {
   position: absolute;
   content: "";
@@ -270,7 +278,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   -webkit-transition: 0.1s ease-in-out all;
   transition: 0.1s ease-in-out all;
 }
-/* line 214, ../sass/_public.sass */
+/* line 222, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:before {
   position: absolute;
   content: "";
@@ -284,25 +292,25 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   -webkit-transition: 0.1s ease-in-out all;
   transition: 0.1s ease-in-out all;
 }
-/* line 226, ../sass/_public.sass */
+/* line 234, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:hover:after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-/* line 229, ../sass/_public.sass */
+/* line 237, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item:not(.dropdown) a:hover:before {
   width: 85%;
 }
-/* line 234, ../sass/_public.sass */
+/* line 242, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item.active:not(.dropdown) a:after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-/* line 237, ../sass/_public.sass */
+/* line 245, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item.active:not(.dropdown) a:before {
   width: 85%;
 }
-/* line 241, ../sass/_public.sass */
+/* line 249, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .nav-item.scroll-item:not(:first-of-type):after {
   position: absolute;
   content: "";
@@ -314,50 +322,50 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   left: 150%;
 }
 @media(max-width: 1100px) {
-  /* line 241, ../sass/_public.sass */
+  /* line 249, ../sass/_public.sass */
   .deanship-navbar .navbar-nav .nav-item.scroll-item:not(:first-of-type):after {
     left: 130%;
   }
 }
 @media(max-width: 992px) {
-  /* line 254, ../sass/_public.sass */
+  /* line 262, ../sass/_public.sass */
   .deanship-navbar .navbar-nav .dropdown {
     margin: 0 15px;
     -webkit-filter: invert(1);
             filter: invert(1);
   }
 }
-/* line 258, ../sass/_public.sass */
+/* line 266, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown a:after {
   opacity: 0;
 }
-/* line 261, ../sass/_public.sass */
+/* line 269, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu {
   background: #23454c;
   padding: 0;
 }
-/* line 264, ../sass/_public.sass */
+/* line 272, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu a {
   color: white;
   font-size: 12px;
   padding: 5px 10px;
 }
-/* line 269, ../sass/_public.sass */
+/* line 277, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu a:hover {
   color: #23454c;
 }
-/* line 272, ../sass/_public.sass */
+/* line 280, ../sass/_public.sass */
 .deanship-navbar .navbar-nav .dropdown .dropdown-menu .dropdown-divider {
   margin: 0;
 }
-/* line 276, ../sass/_public.sass */
+/* line 284, ../sass/_public.sass */
 .deanship-navbar .navbar-toggler {
   border: none;
   outline: none;
 }
 
 /*deanship-footer */
-/* line 283, ../sass/_public.sass */
+/* line 291, ../sass/_public.sass */
 .deanship-footer {
   position: fixed;
   bottom: 0;
@@ -372,7 +380,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   padding: 30px;
 }
 @media(max-width: 720px) {
-  /* line 283, ../sass/_public.sass */
+  /* line 291, ../sass/_public.sass */
   .deanship-footer {
     padding: 10px;
     -ms-flex-wrap: wrap;
@@ -385,24 +393,24 @@ input[type="text"], select, textarea, .form-control, .custom-select {
             justify-content: center;
   }
 }
-/* line 298, ../sass/_public.sass */
+/* line 306, ../sass/_public.sass */
 .deanship-footer a {
   color: black;
   font-size: 11px;
   padding: 5px;
 }
-/* line 303, ../sass/_public.sass */
+/* line 311, ../sass/_public.sass */
 .deanship-footer a .deanship--icon {
   margin-left: 10px;
 }
 @media(max-width: 720px) {
-  /* line 303, ../sass/_public.sass */
+  /* line 311, ../sass/_public.sass */
   .deanship-footer a .deanship--icon {
     margin-left: 3px;
   }
 }
 @media(max-width: 720px) {
-  /* line 309, ../sass/_public.sass */
+  /* line 317, ../sass/_public.sass */
   .deanship-footer .footer-contact-nav {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -414,18 +422,18 @@ input[type="text"], select, textarea, .form-control, .custom-select {
             justify-content: center;
   }
 }
-/* line 314, ../sass/_public.sass */
+/* line 322, ../sass/_public.sass */
 .deanship-footer .footer-contact-nav .nav-item {
   margin: 0 5px;
 }
-/* line 317, ../sass/_public.sass */
+/* line 325, ../sass/_public.sass */
 .deanship-footer .copyright {
   color: black;
   font-size: 11px;
 }
 
 /*deanship-modal */
-/* line 327, ../sass/_public.sass */
+/* line 335, ../sass/_public.sass */
 .deanship-modal .modal-dialog {
   width: 100%;
   max-width: none;
@@ -442,21 +450,21 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   margin: 0;
   overflow: hidden;
 }
-/* line 337, ../sass/_public.sass */
+/* line 345, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content {
   width: 450px;
   border-radius: 0;
   padding: 50px;
   position: relative;
 }
-/* line 343, ../sass/_public.sass */
+/* line 351, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content input.form-control {
   border-radius: 0;
   border-color: #e5e5e5;
   padding: 10px;
   font-size: 18px;
 }
-/* line 349, ../sass/_public.sass */
+/* line 357, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content .form-check {
   color: gray;
   margin-bottom: 50px;
@@ -468,7 +476,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 357, ../sass/_public.sass */
+/* line 365, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content .btn {
   padding: 0;
   margin-left: 20px;
@@ -479,20 +487,22 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   background: transparent;
   border: none;
 }
-/* line 366, ../sass/_public.sass */
+/* line 374, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content .btn:hover {
   color: #f6c103;
 }
-/* line 370, ../sass/_public.sass */
+/* line 378, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content .close-modal {
   position: absolute;
   top: 10px;
   left: 10px;
+  font-size: 20px;
   cursor: pointer;
   background: transparent !important;
   border: none !important;
+  outline: none;
 }
-/* line 377, ../sass/_public.sass */
+/* line 387, ../sass/_public.sass */
 .deanship-modal .modal-dialog .modal-content .close-modal:hover {
   color: #f6c103;
 }
@@ -513,33 +523,54 @@ input[type="text"], select, textarea, .form-control, .custom-select {
 /* line 13, ../sass/service.sass */
 .service-page .service-section {
   padding: 150px 220px;
+  padding-bottom: 100px;
 }
-/* line 17, ../sass/service.sass */
+@media(max-width: 850px) {
+  /* line 13, ../sass/service.sass */
+  .service-page .service-section {
+    padding: 150px 100px;
+    padding-bottom: 100px;
+  }
+}
+@media(max-width: 650px) {
+  /* line 13, ../sass/service.sass */
+  .service-page .service-section {
+    padding: 150px 20px;
+    padding-bottom: 100px;
+  }
+}
+/* line 26, ../sass/service.sass */
 .service-page .service-section .description {
   width: 500px;
 }
-/* line 20, ../sass/service.sass */
+@media(max-width: 650px) {
+  /* line 26, ../sass/service.sass */
+  .service-page .service-section .description {
+    width: 100%;
+  }
+}
+/* line 31, ../sass/service.sass */
 .service-page .service-section .description p {
   color: #808080;
 }
-/* line 24, ../sass/service.sass */
+/* line 35, ../sass/service.sass */
 .service-page .service-form {
   margin-top: 50px;
 }
-/* line 27, ../sass/service.sass */
-.service-page .service-form .row {
+/* line 38, ../sass/service.sass */
+.service-page .service-form .row, .service-page .service-form .col-md-6 {
   margin-bottom: 20px;
 }
-/* line 30, ../sass/service.sass */
+/* line 41, ../sass/service.sass */
 .service-page .service-form .form-check {
   color: #808080;
   font-size: 18px;
 }
-/* line 34, ../sass/service.sass */
+/* line 45, ../sass/service.sass */
 .service-page .service-form input {
   height: 50px;
 }
-/* line 38, ../sass/service.sass */
+/* line 49, ../sass/service.sass */
 .service-page .service-form .input-group-postpend .input-group-text {
   height: 50px;
 }

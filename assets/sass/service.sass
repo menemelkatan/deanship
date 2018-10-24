@@ -12,10 +12,21 @@
 
   .service-section
     padding: 150px 220px
+    padding-bottom: 100px
+
+    @media(max-width: 850px)
+      padding: 150px 100px
+      padding-bottom: 100px
+
+    @media(max-width: 650px)
+      padding: 150px 20px
+      padding-bottom: 100px
 
 
     .description
       width: 500px
+      @media(max-width: 650px)
+        width: 100%
 
       p
         color: $gray
@@ -24,7 +35,7 @@
   .service-form
     margin-top: 50px
 
-    .row
+    .row, .col-md-6
       margin-bottom: 20px
 
     .form-check
@@ -37,4 +48,3 @@
     .input-group-postpend
       .input-group-text
         height: 50px
- 

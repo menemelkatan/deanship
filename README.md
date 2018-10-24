@@ -4,4 +4,10 @@
 # Changelog => Front-end
 - Splash Page.
 - About Us Page.
-- ### ....now working on events page.
+- Events Page.
+- Solutions Page.
+- Development Page.
+- Spaces Page.
+- Signup Page.
+- Account Page.
+- Payment Page.
