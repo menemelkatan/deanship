@@ -20,7 +20,7 @@
     @media(max-width: 900px)
       padding: 100px 50px
       padding-right: 250px
- 
+
     @media(max-width: 850px)
       padding: 100px 10px
       padding-right: 200px
@@ -288,7 +288,7 @@
           padding-bottom: 0
 
 
-    #dateSelector
+    .dateSelector, .new-dateSelector, .new-space-dateSelector
       .datepicker-inline
         transform: scale(1.6)
         margin: 60px auto
@@ -306,12 +306,13 @@
 
 
 
+
     .time-slider-wrapper
       overflow-x: scroll
       padding: 20px
       height: 100px
       margin-top: 100px
-      .time-slider
+      .time-slider, .new-time-slider, .new-space-time-slider
         width: 1800px
 
 
@@ -378,3 +379,8 @@
           p
             color: $gray
             margin-bottom: 0
+
+
+.space-reservation-form-content.new
+  .activity-name-input
+    display: none

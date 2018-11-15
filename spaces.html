@@ -301,7 +301,7 @@
               <p class="bottom-line-title resreved-time">
                 8:00 - 10:00 صباحا
               </p>
-              <div class="input-group">
+              <div class="input-group activity-name-input">
                 <input type="text" class="form-control" placeholder="اسم المبادرة" required>
               </div>
               <div class="form-group row">
@@ -435,13 +435,15 @@
             </div>
             <div class="col-md-6">
 
-              <div id="dateSelector">
-                <input data-toggle="datepicker">
+              <div class="dateSelector">
+                <input  class="normal-datepicker">
               </div>
 
 
               <div class="time-slider-wrapper">
                 <div id="scale-slider" class="time-slider"></div>
+                <input type="hidden" class="from-time">
+                <input type="hidden" class="to-time">
               </div>
 
               <div align="left">

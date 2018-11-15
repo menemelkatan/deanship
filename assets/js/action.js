@@ -125,14 +125,15 @@ $(document).ready(function() {
 		$('.change-password').css('display', 'block');
 	})
 
+	$.fn.datepicker;
+
 	//datepicker
-	$('[data-toggle="datepicker"]').datepicker({
-	  format: 'dd-mm-yyyy',
+	$('.normal-datepicker').datepicker({
+		format: 'dd-mm-yyyy',
 		inline: true,
-		container: '#dateSelector'
+		container: '.dateSelector',
+		startDate: new Date()
 	});
-
-
 
 	//time slider
 	$(".time-slider")
@@ -157,7 +158,39 @@ $(document).ready(function() {
 
 	//add new period to the reservation
 	$('.confirm-new-period').on('click', function(){
+
 		$('<div class="row space-reservation-form-content new"></div>').insertAfter('.space-reservation-form-content').last().html($('.space-reservation-form-content').eq(0).html()+'<span class="cancel-reservation-btn">X</span>');
+
+		$('.space-reservation-form-content.new .activity-name-input').remove();
+		$('.space-reservation-form-content.new .time-slider').removeClass('time-slider').addClass('new-time-slider');
+		$('.space-reservation-form-content.new .normal-datepicker').parent('.dateSelector').removeClass('dateSelector').addClass('new-dateSelector');
+		$('.space-reservation-form-content.new .normal-datepicker').removeClass('normal-datepicker').addClass('new-datepicker');
+
+		//time slider
+		$(".new-time-slider")
+
+		    .slider({
+		        min: 0,
+		        max: 24,
+		        range: true,
+		        values: [22, 23]
+		    })
+
+		    .slider("pips", {
+		        rest: "label",
+						suffix: ':00'
+		    })
+		    .slider("float");
+
+
+				$('.new-datepicker').datepicker({
+					format: 'dd-mm-yyyy',
+					inline: true,
+					container: '.new-dateSelector',
+					startDate: new Date()
+				});
+
+				$('.new-dateSelector').children('.datepicker-inline')[0].remove();
 		//cancel the new period/room button
 		$('.cancel-reservation-btn').each(function(i){
 			$('.cancel-reservation-btn').eq(i).on('click', function(){
@@ -177,6 +210,38 @@ $(document).ready(function() {
 			$('.other-spaces-section').css('display', 'none');
 			$('<div class="row space-reservation-form-content new"></div>').insertAfter('.space-reservation-form-content').last().html($('.space-reservation-form-content').eq(0).html()+'<span class="cancel-reservation-btn">X</span>').prepend('<div class="col-12"><h2 class="line-top-title">'+$('.new-space-btn').eq(i).children('.another-single-space-details').children('.line-top-title').html()+'</h2></div>');
 
+			$('.space-reservation-form-content.new .activity-name-input').remove();
+
+			$('.space-reservation-form-content.new .time-slider').removeClass('time-slider new-time-slider').addClass('new-space-time-slider');
+			$('.space-reservation-form-content.new .normal-datepicker').parent('.dateSelector').removeClass('dateSelector new-dateSelector').addClass('new-space-dateSelector');
+			$('.space-reservation-form-content.new .normal-datepicker').removeClass('normal-datepicker new-datepicker').addClass('new-space-datepicker');
+
+			//time slider
+			$(".new-space-time-slider")
+
+			    .slider({
+			        min: 0,
+			        max: 24,
+			        range: true,
+			        values: [22, 23]
+			    })
+
+			    .slider("pips", {
+			        rest: "label",
+							suffix: ':00'
+			    })
+			    .slider("float");
+
+
+			$('.new-space-datepicker').datepicker({
+				format: 'dd-mm-yyyy',
+				inline: true,
+				container: '.new-space-dateSelector',
+				startDate: new Date()
+			});
+
+			$('.new-space-dateSelector').children('.datepicker-inline')[0].remove();
+
 			$('.cancel-reservation-btn').each(function(o){
 				$('.cancel-reservation-btn').eq(o).on('click', function(){
 					$(this).parent().remove();
@@ -194,6 +259,20 @@ $(document).ready(function() {
 		else
 			$(this).css('display', 'none')
 	});
+
+
+	//get the time slider value
+	$('.ui-slider-pip-label').each(function(i){
+		$('.ui-slider-pip-label').eq(i).on('click', function(){
+			var fromTime = $('.ui-slider-pip-selected-1').children('.ui-slider-label').data('value'),
+					toTime = $('.ui-slider-pip-selected-2').children('.ui-slider-label').data('value');
+
+			$(this).parent('.time-slider').siblings('.from-time').val(fromTime);
+			$(this).parent('.time-slider').siblings('.to-time').val(toTime);
+			// $('.from-time').val(fromTime);
+			// $('.to-time').val(toTime);
+		})
+	})
 
 
 
